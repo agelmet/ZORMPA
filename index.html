@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<!--
+  ZORMPA — Θωμαή Ζορμπά, Χειρουργός Οδοντίατρος DDS, MSc Dental Biomaterials, Παγκράτι · Advon Media, 22 Sept 2026
+  Named style: «Lilac & stone gallery» (the client asked for neutral grey / soft lilac frames and smaller type)
+  Skeleton roll: hero = split with framed portrait · nav = top bar · services = tabbed explorer ·
+  proof = large single quote · contact = split map + details · FAQ = two-column list before contact
+  Signature interaction: tooth explorer — a line-drawn tooth whose parts light up for each group of services
+  Tone dial: professional / clinical → lilac & grey washes, dot grid, thin rings, a hairline tooth outline. No confetti.
+-->
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Οδοντίατρος Παγκράτι | Θωμαή Ζορμπά, Χειρουργός Οδοντίατρος</title>
+<meta name="description" content="Χειρουργός οδοντίατρος στο Παγκράτι από το 2000. Πρόληψη, λευκές εμφράξεις, ενδοδοντία, προσθετική, εμφυτεύματα και χειρουργικές εξαγωγές. Κλείστε ραντεβού.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#2B2C40">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Θωμαή Ζορμπά — Χειρουργός Οδοντίατρος, Παγκράτι">
+<meta property="og:description" content="DDS, MSc Dental Biomaterials. Ιδιωτικό οδοντιατρείο στο Παγκράτι από το 2000.">
+<meta property="og:image" content="assets/img/cheirourgos-odontiatros-zormpa-thomai.webp">
+<link rel="icon" href="favicon.ico?v=1" sizes="48x48">
+<link rel="icon" href="assets/icons/favicon.svg?v=1" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png?v=1">
+<link rel="manifest" href="site.webmanifest?v=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Commissioner:wght@400;600&display=swap">
+<link rel="preload" as="image" href="assets/img/cheirourgos-odontiatros-zormpa-thomai.webp" imagesrcset="assets/img/cheirourgos-odontiatros-zormpa-thomai-700.webp 700w, assets/img/cheirourgos-odontiatros-zormpa-thomai.webp 1300w" imagesizes="(max-width:760px) 90vw, 520px" fetchpriority="high">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+ --paper:#F6F5F8;--paper2:#EDEBF2;--card:#FDFCFE;--ink:#1E1F2B;--ink2:#4B4C5E;--mute:#6C6D7E;
+ --line:#D6D3E0;--grey:#C9C7D1;--lil:#6F62A0;--lil2:#9D92C6;--lil3:#DCD6EC;--deep:#2B2C40;--deep2:#222333;--gold:#E0A526;
+ --sh-1:0 1px 2px rgba(30,31,43,.05),0 8px 20px -10px rgba(30,31,43,.16);
+ --sh-2:0 2px 6px rgba(30,31,43,.06),0 24px 50px -22px rgba(30,31,43,.3);
+ --sh-3:0 40px 90px -36px rgba(43,44,64,.55),0 10px 30px -14px rgba(111,98,160,.35);
+ --serif:'GFS Didot','Noto Serif',Georgia,serif;--sans:'Commissioner',system-ui,-apple-system,'Segoe UI',sans-serif;
+ --max:1200px;--r:18px;--ease:cubic-bezier(.2,.7,.2,1);--spring:cubic-bezier(.34,1.56,.64,1)
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 15px/1.7 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.15;margin:0}
+h2{font-size:clamp(28px,3vw,38px)}
+h3{font-family:var(--sans);font-weight:600;font-size:16px;line-height:1.35}
+p{margin:0 0 1em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 11.5px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--lil)}
+.eyebrow::before{content:"";width:22px;height:1px;background:currentColor}
+.center{text-align:center}.center .eyebrow{justify-content:center}
+.lead{font-size:16px;color:var(--ink2);max-width:640px}
+.center .lead{margin:16px auto 0}
+section{position:relative;isolation:isolate;overflow-x:clip}
+.sec{padding:112px 0}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:999;background:#fff;padding:8px 12px}
+
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:999px;font:600 14px/1 var(--sans);text-decoration:none;border:0;cursor:pointer;overflow:hidden;transition:transform .35s var(--spring),box-shadow .35s var(--ease)}
+.btn svg{width:17px;height:17px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.btn-lil{background:var(--lil);color:#fff;box-shadow:0 12px 30px -12px rgba(111,98,160,.8),inset 0 1px 0 rgba(255,255,255,.2)}
+.btn-lil::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.35) 50%,transparent 65%);transform:translateX(-120%)}
+.btn-line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--grey)}
+.tlink{font-weight:600;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+@media (hover:hover){.btn:hover{transform:translateY(-2px)}.btn-lil:hover{box-shadow:0 18px 40px -14px rgba(111,98,160,.9)}.btn-lil:hover::after{transform:translateX(120%);transition:transform .8s var(--ease)}.btn-line:hover{box-shadow:inset 0 0 0 1px var(--lil)}}
+.btn:active{transform:scale(.97)}
+
+/* header */
+.hdr{position:fixed;inset:0 0 auto;z-index:50;transition:background .4s,box-shadow .4s}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:82px;transition:height .4s}
+.hdr.solid{background:rgba(246,245,248,.86);-webkit-backdrop-filter:saturate(1.3) blur(14px);backdrop-filter:saturate(1.3) blur(14px);box-shadow:0 1px 0 rgba(30,31,43,.08)}
+.hdr.solid .wrap{height:66px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.mark{width:40px;height:40px;flex:none}
+.mark .o{fill:none;stroke:var(--grey);stroke-width:1}
+.mark .t{fill:none;stroke:var(--lil);stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round}
+.hdr.spin .mark{animation:mkSpin 1.1s var(--ease)}
+@keyframes mkSpin{to{transform:rotate(360deg)}}
+.brand b{display:block;font:400 20px/1.05 var(--serif)}
+.brand small{display:block;font:600 9.5px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:3px}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a{text-decoration:none;font-weight:600;font-size:13.5px;position:relative}
+.nav a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--lil);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+@media (hover:hover){.nav a:not(.btn):hover::after{transform:scaleX(1)}}
+.nav .btn{padding:11px 18px;font-size:13.5px}
+.lang{display:flex;gap:4px;padding:4px;border-radius:999px;background:var(--paper2)}
+.lang button{display:flex;align-items:center;gap:6px;border:0;background:none;color:var(--ink);font:600 12px/1 var(--sans);padding:6px 9px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed=true]{background:#fff;box-shadow:var(--sh-1)}
+.flag{display:block;width:18px;height:12px;overflow:hidden;line-height:0;border-radius:2px;box-shadow:0 0 0 .5px rgba(0,0,0,.15)}
+.flag svg{display:block;width:100%;height:100%}
+.burger{display:none;width:46px;height:46px;border-radius:50%;border:0;background:var(--paper2);color:var(--ink);cursor:pointer;align-items:center;justify-content:center}
+.burger svg{width:22px;height:22px}
+.mnav{position:fixed;inset:0;z-index:80;background:var(--deep2);color:#fff;display:flex;flex-direction:column;padding:24px 26px 40px;transform:translateY(-100%);transition:transform .55s var(--ease);visibility:hidden}
+.mnav.open{transform:none;visibility:visible}
+.mnav .top{display:flex;justify-content:space-between;align-items:center}
+.mnav .brand{color:#fff}.mnav .brand small{color:rgba(255,255,255,.6)}
+.mnav .x{width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.mnav .x svg{width:22px;height:22px}
+.mnav nav{display:flex;flex-direction:column;gap:4px;margin-top:44px}
+.mnav nav a{font:400 30px/1.35 var(--serif);text-decoration:none;opacity:0;transform:translateX(-18px);transition:opacity .45s,transform .45s var(--ease)}
+.mnav.open nav a{opacity:1;transform:none}
+.mnav.open nav a:nth-child(2){transition-delay:.05s}.mnav.open nav a:nth-child(3){transition-delay:.1s}.mnav.open nav a:nth-child(4){transition-delay:.15s}.mnav.open nav a:nth-child(5){transition-delay:.2s}.mnav.open nav a:nth-child(6){transition-delay:.25s}
+.mnav .lang{margin-top:auto;align-self:flex-start}
+.mnav .btn{margin-top:20px;justify-content:center}
+
+.prog{position:fixed;left:0;top:0;height:3px;width:100%;z-index:60;transform-origin:left;transform:scaleX(0);background:linear-gradient(90deg,var(--grey),var(--lil))}
+
+/* intro: the tooth draws itself, the initials land, the curtain lifts */
+.intro{position:fixed;inset:0;z-index:100;background:var(--deep2);display:none;align-items:center;justify-content:center;flex-direction:column;gap:16px;color:#fff}
+.js .intro.run{display:flex}
+.intro svg{width:92px;height:92px}
+.intro .o,.intro .t{fill:none;stroke-dasharray:1;stroke-dashoffset:1;stroke-linecap:round;stroke-linejoin:round}
+.intro .o{stroke:rgba(255,255,255,.35);stroke-width:1}
+.intro .t{stroke:var(--lil2);stroke-width:1.5}
+.intro.run .o{animation:draw 1s var(--ease) forwards}.intro.run .t{animation:draw 1.1s var(--ease) .25s forwards}
+.intro .nm{display:flex;gap:2px;font:400 26px/1 var(--serif);letter-spacing:.06em}
+.intro .nm span{opacity:0;transform:translateY(14px)}
+.intro.run .nm span{animation:up .5s var(--spring) forwards;animation-delay:calc(.7s + var(--i)*45ms)}
+.intro.lift{transition:transform .9s cubic-bezier(.7,0,.2,1),border-radius .9s;transform:translateY(-105%);border-radius:0 0 50% 50%/0 0 20% 20%}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes up{to{opacity:1;transform:none}}
+
+/* hero — split, framed portrait */
+.hero{min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:clip;background:linear-gradient(160deg,#F7F6FA 0%,#EEEBF4 60%,#E9E6F0 100%)}
+.hero .wrap{width:100%;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;padding-top:110px;padding-bottom:80px;position:relative;z-index:2}
+.hero h1 .nm{display:block;font-size:clamp(46px,5.4vw,70px);line-height:1;letter-spacing:.01em;color:var(--deep)}
+.hero h1 .role{display:block;margin-top:18px;font:600 13.5px/1.5 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--lil)}
+.hero h1 .role em{font-style:normal;color:var(--ink2);letter-spacing:.06em;text-transform:none;font-weight:600;display:block;margin-top:4px;font-size:15px}
+.hero .sub{margin:24px 0 32px;font-size:16px;line-height:1.7;color:var(--ink2);max-width:500px}
+.hero .ctas{display:flex;flex-wrap:wrap;align-items:center;gap:22px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:22px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line);max-width:520px}
+.hero .meta div{font-size:12.5px;color:var(--mute);line-height:1.4}
+.hero .meta b{display:block;font:400 22px/1.1 var(--serif);color:var(--deep);margin-bottom:2px}
+.pwrap{position:relative;justify-self:center;width:min(100%,470px)}
+.pwrap .mat{position:absolute;inset:26px -26px -26px 26px;border-radius:26px;border:1px solid var(--lil2);background:linear-gradient(160deg,rgba(220,214,236,.55),rgba(201,199,209,.35))}
+.pwrap .frame{position:relative;border-radius:26px;overflow:hidden;background:#fff;padding:12px;box-shadow:var(--sh-3)}
+.pwrap img{width:100%;height:auto;aspect-ratio:1300/1613;border-radius:16px}
+.pwrap .tag{position:absolute;left:-34px;bottom:48px;background:#fff;border-radius:16px;padding:14px 18px;box-shadow:var(--sh-2);display:flex;align-items:center;gap:12px;font-size:12.5px;color:var(--mute);line-height:1.35}
+.pwrap .tag svg{width:26px;height:26px}
+.pwrap .tag2{left:auto;right:-30px;top:40px;bottom:auto;flex-direction:column;align-items:flex-start;gap:2px}
+.pwrap .tag2 b{font-size:26px}
+@media (prefers-reduced-motion:no-preference){.hero.go .pwrap .tag2{animation:bob 5s ease-in-out 2s infinite}}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.pwrap .tag b{display:block;font:400 20px/1 var(--serif);color:var(--ink)}
+.pwrap .tag .s{color:var(--gold);letter-spacing:1px;font-size:12px}
+.js .hero .ch{display:inline-block;opacity:0;transform:translateY(.6em)}
+.js .hero.go .ch{opacity:1;transform:none;transition:opacity .5s var(--ease),transform .7s var(--spring);transition-delay:calc(var(--i)*35ms + 150ms)}
+.js .hero .fx{opacity:0;transform:translateY(16px)}
+.js .hero.go .fx{opacity:1;transform:none;transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:var(--d,0s)}
+.js .pwrap .frame{opacity:0;transform:translateY(40px) scale(.96)}
+.js .hero.go .pwrap .frame{opacity:1;transform:none;transition:opacity .8s,transform 1.1s var(--spring) .25s}
+.js .pwrap .mat{opacity:0;transform:translate(-26px,-26px)}
+.js .hero.go .pwrap .mat{opacity:1;transform:none;transition:opacity .8s .5s,transform 1.2s var(--ease) .5s}
+.js .pwrap .tag{opacity:0;transform:translateX(-20px) scale(.9)}
+.js .hero.go .pwrap .tag{opacity:1;transform:none;transition:opacity .5s 1.2s,transform .7s var(--spring) 1.2s}
+/* hero living background */
+.hbg{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.hbg .orb{position:absolute;border-radius:50%}
+.hbg .o1{width:50vmax;height:50vmax;right:-14vmax;top:-18vmax;background:radial-gradient(closest-side,rgba(157,146,198,.35),transparent)}
+.hbg .o2{width:40vmax;height:40vmax;left:-14vmax;bottom:-20vmax;background:radial-gradient(closest-side,rgba(201,199,209,.55),transparent)}
+.hbg .dg{position:absolute;inset:-40px;background-image:radial-gradient(rgba(111,98,160,.22) 1px,transparent 1.5px);background-size:24px 24px;-webkit-mask-image:radial-gradient(40% 55% at 75% 45%,#000,transparent);mask-image:radial-gradient(40% 55% at 75% 45%,#000,transparent)}
+.hbg .rg{position:absolute;left:73%;top:50%;border-radius:50%;border:1px solid rgba(111,98,160,.22);width:var(--s);height:var(--s);margin:calc(var(--s)/-2) 0 0 calc(var(--s)/-2);opacity:0}
+.hbg .tooth{position:absolute;left:4%;bottom:6%;width:150px;height:190px;opacity:.5}
+.hbg .tooth path{fill:none;stroke:rgba(111,98,160,.4);stroke-width:.8;stroke-dasharray:1;stroke-dashoffset:1;vector-effect:non-scaling-stroke}
+.hero.go .hbg .tooth path{animation:draw 3s var(--ease) 1s forwards}
+.hbg .sweep{position:absolute;top:-20%;bottom:-20%;width:30%;left:-40%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-18deg)}
+
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .5s var(--ease),transform .5s var(--ease);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+
+/* proof — tiles pop in with a spring, numbers count */
+.proof{padding:0 0 10px;margin-top:-50px;z-index:5}
+.proof .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.pf{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 22px;box-shadow:var(--sh-2);display:flex;flex-direction:column;gap:6px}
+.pf .k{font:400 30px/1 var(--serif);color:var(--deep);display:flex;align-items:center;gap:8px}
+.pf .k small{font:600 12px/1 var(--sans);color:var(--gold);letter-spacing:1px}
+.pf .k svg{width:22px;height:22px}
+.pf .l{font-size:13px;color:var(--ink2);line-height:1.5}
+.js .pf{opacity:0;transform:scale(.7)}
+.js .proof.in .pf{opacity:1;transform:none;transition:opacity .4s,transform .8s var(--spring);transition-delay:calc(var(--i)*90ms)}
+
+/* about — heading centred, photo | text, marker highlight */
+.about .cols{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:56px}
+.about .ph{position:relative;justify-self:center;max-width:520px;width:100%}
+.about .ph .fr{border-radius:22px;background:#fff;padding:12px;box-shadow:var(--sh-2);border:1px solid var(--line)}
+.about .ph img{width:100%;height:auto;aspect-ratio:686/625;border-radius:14px}
+.about .ph::before{content:"";position:absolute;inset:-18px 18px 18px -18px;border-radius:26px;border:1px solid var(--grey);z-index:-1}
+.js .about .ph{opacity:0;transform:rotate(-5deg) scale(.9) translateY(30px)}
+.js .about .ph.in{opacity:1;transform:none;transition:opacity .6s,transform 1s var(--spring)}
+.about .txt p{color:var(--ink2);font-size:15.5px}
+.about .txt p.big{font:400 22px/1.5 var(--serif);color:var(--ink)}
+.js .about .txt p{opacity:0;transform:translateY(16px)}
+.js .about .txt.in p{opacity:1;transform:none;transition:opacity .5s var(--ease),transform .5s var(--ease)}
+.js .about .txt.in p:nth-child(2){transition-delay:.12s}.js .about .txt.in p:nth-child(3){transition-delay:.24s}.js .about .txt.in p:nth-child(4){transition-delay:.36s}
+.mk{background:linear-gradient(transparent 62%,var(--lil3) 62%) no-repeat 0 0/0% 100%;transition:background-size 1.2s var(--ease) .6s;padding:0 2px}
+.txt.in .mk{background-size:100% 100%}
+.sig{display:flex;align-items:center;gap:14px;margin-top:26px;padding-top:20px;border-top:1px solid var(--line)}
+.sig b{font:400 22px/1 var(--serif)}
+.sig span{font-size:12.5px;color:var(--mute);letter-spacing:.04em}
+.uoa{color:var(--lil);text-decoration:none;border-bottom:1px solid var(--lil3)}
+
+/* services — tooth explorer (signature) */
+.svc{background:var(--card);border-radius:48px 48px 0 0;border-top:1px solid var(--line)}
+.tx{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;margin-top:56px;align-items:stretch}
+.stage{position:relative;border-radius:28px;background:linear-gradient(160deg,#F3F1F8,#E9E6F1);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:30px;overflow:hidden;isolation:isolate;min-height:460px}
+.stage::before{content:"";position:absolute;inset:0;z-index:-1;background-image:radial-gradient(rgba(111,98,160,.16) 1px,transparent 1.4px);background-size:20px 20px;-webkit-mask-image:radial-gradient(closest-side,#000,transparent);mask-image:radial-gradient(closest-side,#000,transparent)}
+.stage .halo{position:absolute;width:300px;height:300px;border-radius:50%;border:1px solid rgba(111,98,160,.25)}
+.stage svg.tth{width:min(78%,300px);height:auto;overflow:visible}
+.tth .p{fill:none;stroke:#A9A6B6;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:stroke .5s,stroke-width .5s,opacity .5s}
+.tth .f{fill:transparent;stroke:none;transition:fill .6s}
+.tth .p.opt{opacity:.0}
+.tth .on.p{stroke:var(--lil);stroke-width:2.4;opacity:1}
+.tth .on.f{fill:rgba(157,146,198,.28)}
+.tth .p.draw{stroke-dasharray:1;animation:redraw .9s var(--ease)}
+@keyframes redraw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+.stage .cap{position:absolute;left:24px;bottom:20px;right:24px;display:flex;justify-content:space-between;font-size:12px;color:var(--mute);letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tabs button{border:1px solid var(--line);background:#fff;color:var(--ink);font:600 13px/1 var(--sans);padding:11px 15px;border-radius:999px;cursor:pointer;transition:background .3s,color .3s,border-color .3s,transform .35s var(--spring)}
+.tabs button[aria-selected=true]{background:var(--deep);border-color:var(--deep);color:#fff}
+@media (hover:hover){.tabs button:not([aria-selected=true]):hover{border-color:var(--lil);transform:translateY(-2px)}}
+.js .tabs.rvt button{opacity:0;transform:translateY(12px)}
+.js .tabs.rvt.in button{opacity:1;transform:none;transition:opacity .4s,transform .5s var(--spring),background .3s,color .3s;transition-delay:calc(var(--i)*50ms)}
+.spanel{margin-top:22px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:32px 34px;box-shadow:var(--sh-1);min-height:380px}
+.spanel .in2{transition:opacity .3s,transform .4s var(--ease)}
+.spanel .in2.swap{opacity:0;transform:translateX(16px)}
+.spanel h3{font:400 28px/1.15 var(--serif);margin-bottom:12px;color:var(--deep)}
+.spanel .intro2{color:var(--ink2);font-size:15px;margin-bottom:20px}
+.spanel ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 20px}
+.spanel li{position:relative;padding:12px 14px 12px 40px;border-radius:14px;background:var(--paper);font-size:13.5px;color:var(--ink2);line-height:1.5}
+.spanel li b{display:block;color:var(--ink);font-size:14px;margin-bottom:2px}
+.spanel li::before{content:"";position:absolute;left:14px;top:16px;width:14px;height:14px;border-radius:50%;border:1.5px solid var(--lil);background:radial-gradient(circle,var(--lil) 0 3px,transparent 3.5px)}
+.spanel li{opacity:1}
+.spanel .in2 li{animation:liIn .5s var(--ease) both;animation-delay:calc(var(--i)*55ms)}
+@keyframes liIn{from{opacity:0;transform:translateY(10px)}}
+.svc .note{margin:18px 0 0;font-size:13px;color:var(--mute)}
+
+/* CV */
+.cv .cols{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:56px;align-items:stretch}
+.tl{position:relative;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:36px 36px 36px 64px;box-shadow:var(--sh-1)}
+.tl h3,.cvc h3{font:400 24px/1.2 var(--serif);margin:0 0 22px -28px;color:var(--deep)}
+.cvc h3{margin-left:0}
+.tl::before,.tl .line{content:"";position:absolute;left:36px;top:96px;bottom:44px;width:2px;background:var(--paper2)}
+.tl .line{background:linear-gradient(var(--grey),var(--lil));transform:scaleY(0);transform-origin:top;transition:transform 1.8s var(--ease)}
+.tl.in .line{transform:none}
+.st{position:relative;padding:0 0 20px}.st:last-child{padding-bottom:0}
+.st::before{content:"";position:absolute;left:-33px;top:5px;width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:inset 0 0 0 2.5px var(--lil);transform:scale(0);transition:transform .5s var(--spring)}
+.tl.in .st::before{transform:none}
+.tl.in .st:nth-of-type(2)::before{transition-delay:.25s}.tl.in .st:nth-of-type(3)::before{transition-delay:.5s}.tl.in .st:nth-of-type(4)::before{transition-delay:.75s}.tl.in .st:nth-of-type(5)::before{transition-delay:1s}.tl.in .st:nth-of-type(6)::before{transition-delay:1.25s}
+.st .y{display:inline-block;font:600 11.5px/1 var(--sans);letter-spacing:.1em;color:var(--lil);background:var(--lil3);padding:5px 8px;border-radius:6px;margin-bottom:6px}
+.st b{display:block;font-size:14.5px;line-height:1.45}
+.st span{font-size:13px;color:var(--mute)}
+.cvr{display:grid;grid-template-rows:auto 1fr;gap:28px}
+.cvc{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:32px 34px;box-shadow:var(--sh-1)}
+.cvc ol{margin:0;padding:0;list-style:none;counter-reset:w}
+.cvc ol li{counter-increment:w;position:relative;padding:0 0 14px 38px;font-size:14px;color:var(--ink2);line-height:1.55}
+.cvc ol li::before{content:counter(w);position:absolute;left:0;top:0;width:24px;height:24px;border-radius:50%;background:var(--paper2);color:var(--lil);font:600 12px/24px var(--sans);text-align:center}
+.cvc ol li i{display:block;font-style:normal;font-size:12.5px;color:var(--mute)}
+.langs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.lg{border-radius:14px;background:var(--paper);padding:14px;text-align:center}
+.lg b{display:block;font:400 20px/1.1 var(--serif)}
+.lg span{font-size:12px;color:var(--mute);line-height:1.4;display:block;margin-top:4px}
+.cvc .more{margin:18px 0 0;font-size:13.5px;color:var(--ink2)}
+.js .cvr .cvc{opacity:0;transform:translateX(40px)}
+.js .cvr.in .cvc{opacity:1;transform:none;transition:opacity .5s,transform .7s var(--ease)}
+.js .cvr.in .cvc:nth-child(2){transition-delay:.15s}
+
+/* gallery — justified rows, whole photos, zoom-out reveal */
+.gal{background:var(--paper2);border-radius:48px}
+.rows{display:flex;flex-direction:column;gap:16px;margin-top:56px}
+.row{display:flex;gap:16px}
+.g{position:relative;margin:0;flex:var(--a) 1 0;aspect-ratio:var(--a);border-radius:18px;overflow:hidden;background:#fff;box-shadow:var(--sh-2);cursor:zoom-in;outline:1px solid rgba(255,255,255,.6);outline-offset:-7px}
+.g img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.g figcaption{position:absolute;left:14px;bottom:12px;z-index:2;background:rgba(255,255,255,.9);color:var(--ink);font-size:12px;font-weight:600;padding:6px 10px;border-radius:999px;opacity:0;transform:translateY(8px);transition:opacity .4s,transform .4s var(--ease)}
+.js .g img{transform:scale(1.18)}
+.js .g.in img{transform:none}
+.js .g{opacity:0;transform:translateY(var(--ty,30px))}
+.js .g.in{opacity:1;transform:none;transition:opacity .6s var(--ease),transform .8s var(--ease);transition-delay:calc(var(--i)*90ms)}
+.g:nth-child(even){--ty:-30px}
+.g.in figcaption{opacity:1;transform:none;transition-delay:.8s}
+@media (hover:hover){.g.in:hover img{transform:scale(1.05)}}
+
+/* review — one large real quote */
+.rev .box{display:grid;grid-template-columns:1.4fr .6fr;gap:28px;margin-top:56px;align-items:stretch}
+.qc{position:relative;background:var(--deep);color:#fff;border-radius:28px;padding:52px 56px;box-shadow:var(--sh-3);overflow:hidden;isolation:isolate}
+.qc::before{content:"\201C";position:absolute;right:30px;top:-40px;font:400 240px/1 var(--serif);color:rgba(157,146,198,.25);z-index:-1}
+.qc .stars{display:flex;gap:4px;margin-bottom:22px}
+.qc .stars svg{width:20px;height:20px;fill:var(--gold);transform:scale(0) rotate(-40deg)}
+.qc.in .stars svg{transform:none;transition:transform .45s var(--spring)}
+.qc.in .stars svg:nth-child(2){transition-delay:.08s}.qc.in .stars svg:nth-child(3){transition-delay:.16s}.qc.in .stars svg:nth-child(4){transition-delay:.24s}.qc.in .stars svg:nth-child(5){transition-delay:.32s}
+.qc blockquote{margin:0;font:400 clamp(20px,2vw,26px)/1.5 var(--serif)}
+.qc .who{display:flex;align-items:center;gap:12px;margin-top:28px;font-weight:600;font-size:14px}
+.qc .av{width:38px;height:38px;border-radius:50%;background:var(--lil);display:flex;align-items:center;justify-content:center}
+.qc .who svg{width:18px;height:18px}
+.js .qc{opacity:0;transform:translateY(40px) scale(.97)}
+.js .qc.in{opacity:1;transform:none;transition:opacity .6s,transform .9s var(--spring)}
+.gcard{background:#fff;border:1px solid var(--line);border-radius:28px;padding:36px 30px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:var(--sh-1);gap:10px}
+.gcard svg{width:44px;height:44px}
+.gcard b{font:400 52px/1 var(--serif);color:var(--deep)}
+.gcard .s{color:var(--gold);letter-spacing:3px}
+.gcard p{font-size:13px;color:var(--mute);margin:0 0 10px}
+.js .gcard{opacity:0;transform:translateY(30px)}
+.js .gcard.in{opacity:1;transform:none;transition:opacity .6s .15s,transform .8s var(--ease) .15s}
+
+/* FAQ — two columns */
+.faq{background:var(--card);border-top:1px solid var(--line)}
+.fq{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:52px}
+.qa{border-bottom:1px solid var(--line)}
+.qa summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:20px 2px;font:600 15px/1.45 var(--sans);transition:transform .35s var(--ease),color .3s}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary i{flex:none;width:30px;height:30px;border-radius:50%;border:1px solid var(--line);position:relative;transition:background .3s,border-color .3s,transform .4s var(--ease)}
+.qa summary i::before{content:"";position:absolute;left:50%;top:44%;width:7px;height:7px;border-right:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);transform:translate(-50%,-50%) rotate(45deg)}
+.qa[open] summary i{background:var(--lil);border-color:var(--lil);transform:rotate(180deg)}
+.qa[open] summary i::before{border-color:#fff}
+@media (hover:hover){.qa summary:hover{transform:translateX(5px);color:var(--lil)}}
+.qa .a p{padding:0 2px 20px;color:var(--ink2);margin:0;font-size:14.5px}
+.qa[open] .a p{animation:unf .5s var(--ease)}
+@keyframes unf{from{opacity:0;transform:translateY(-8px)}}
+.js .qa.rq{opacity:0;transform:translateY(16px)}
+.js .qa.rq.in{opacity:1;transform:none;transition:opacity .45s,transform .5s var(--ease);transition-delay:calc(var(--i)*50ms)}
+
+/* contact */
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:56px;align-items:stretch}
+.cbox{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:36px;box-shadow:var(--sh-2);display:flex;flex-direction:column}
+.crow{display:flex;gap:16px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--paper2);text-decoration:none}
+.crow:last-of-type{border-bottom:0}
+.crow .ci{width:42px;height:42px;border-radius:13px;background:var(--paper2);display:flex;align-items:center;justify-content:center;flex:none;color:var(--lil)}
+.crow .ci svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.crow small{display:block;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);font-weight:600}
+.crow b{display:block;font-size:15.5px;font-weight:600}
+address{font-style:normal}
+.js .cbox .crow{opacity:0;transform:translateX(-14px)}
+.js .cbox.in .crow{opacity:1;transform:none;transition:opacity .45s,transform .5s var(--ease);transition-delay:calc(var(--i)*80ms)}
+.cbox .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.cbox.in .btn-lil{animation:pulse 1.4s var(--ease) .8s 2}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(111,98,160,.55)}100%{box-shadow:0 0 0 18px rgba(111,98,160,0)}}
+.dir{margin-top:20px;font-size:13.5px;color:var(--ink2)}
+.map{position:relative;border-radius:26px;overflow:hidden;box-shadow:var(--sh-2);min-height:460px;background:var(--paper2);border:1px solid var(--line)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.35)}
+.map::after{content:"";position:absolute;inset:0;border-radius:26px;box-shadow:inset 0 0 0 2px var(--lil2);pointer-events:none;clip-path:inset(0 100% 100% 0 round 26px);transition:clip-path 1.4s var(--ease)}
+.map.in::after{clip-path:inset(0 0 0 0 round 26px)}
+
+/* footer */
+.ftr{position:relative;isolation:isolate;background:var(--deep2);color:rgba(255,255,255,.78);padding:76px 0 110px;overflow:hidden}
+.ftr .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+.ftr .brand{color:#fff}.ftr .brand small{color:rgba(255,255,255,.55)}
+.ftr .mark .o{stroke:rgba(255,255,255,.3)}.ftr .mark .t{stroke:var(--lil2)}
+.ftr h4{margin:0 0 14px;font:600 11.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--lil2)}
+.ftr a{text-decoration:none}
+.ftr p,.ftr li{font-size:14px}
+.ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ftr .bot{grid-column:1/-1;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(255,255,255,.12);padding-top:22px;margin-top:10px;font-size:12.5px}
+.ftr .bot a{border-bottom:1px solid rgba(255,255,255,.3)}
+.ftr .big{position:absolute;right:-40px;bottom:-60px;width:300px;height:380px;opacity:.08;z-index:-1}
+.ftr .big path{fill:none;stroke:#fff;stroke-width:1}
+
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:45;display:none;grid-template-columns:repeat(3,1fr);gap:6px;padding:6px;border-radius:20px;background:rgba(34,35,51,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 16px 40px -12px rgba(0,0,0,.5);transform:translateY(140%);transition:transform .5s var(--spring)}
+.mbar.on{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 4px;border-radius:14px;color:#fff;text-decoration:none;font-size:12px;font-weight:600}
+.mbar a:first-child{background:var(--lil)}
+.mbar svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.totop{position:fixed;right:24px;bottom:24px;z-index:44;width:54px;height:54px;border-radius:50%;border:0;background:#fff;box-shadow:var(--sh-2);cursor:pointer;opacity:0;transform:translateY(20px) scale(.8);transition:opacity .4s,transform .5s var(--spring);display:flex;align-items:center;justify-content:center;color:var(--deep)}
+.totop.on{opacity:1;transform:none}
+.totop svg.ring{position:absolute;inset:0;transform:rotate(-90deg)}
+.totop svg.ring circle{fill:none;stroke:var(--lil);stroke-width:2;stroke-dasharray:1;stroke-dashoffset:calc(1 - var(--p,0))}
+.totop svg.ar{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+
+.lb{position:fixed;inset:0;z-index:120;background:rgba(22,23,34,.93);display:flex;align-items:center;justify-content:center;padding:4vmin;opacity:0;visibility:hidden;transition:opacity .35s}
+.lb.open{opacity:1;visibility:visible}
+.lb img{max-width:100%;max-height:88vh;width:auto;height:auto;border-radius:12px;box-shadow:0 40px 100px -30px #000;transform:scale(.9);transition:transform .5s var(--spring)}
+.lb.open img{transform:none}
+.lb button{position:absolute;top:18px;right:18px;width:50px;height:50px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(0,0,0,.3);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.lb button svg{width:22px;height:22px}
+
+/* ambient layer */
+.amb{position:absolute;inset:0;z-index:-1;overflow:hidden;border-radius:inherit;pointer-events:none}
+.amb .aw{position:absolute;border-radius:50%;width:42vmax;height:42vmax;background:radial-gradient(closest-side,var(--c),transparent)}
+.amb .aw.wa{left:-16vmax;top:-14vmax}.amb .aw.wb{right:-16vmax;bottom:-16vmax}
+.amb .dg{position:absolute;inset:-40px;background-image:radial-gradient(rgba(111,98,160,.18) 1px,transparent 1.4px);background-size:24px 24px;-webkit-mask-image:radial-gradient(45% 60% at var(--mx,85%) var(--my,25%),#000,transparent);mask-image:radial-gradient(45% 60% at var(--mx,85%) var(--my,25%),#000,transparent)}
+.amb .gl{position:absolute;inset:0;background-image:linear-gradient(rgba(111,98,160,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(111,98,160,.08) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:linear-gradient(180deg,transparent,#000 30%,#000 70%,transparent);mask-image:linear-gradient(180deg,transparent,#000 30%,#000 70%,transparent)}
+.amb .rg{position:absolute;left:var(--x);top:var(--y);width:var(--s);height:var(--s);margin:calc(var(--s)/-2) 0 0 calc(var(--s)/-2);border-radius:50%;border:1px solid var(--c);opacity:0}
+.amb .to{position:absolute;left:var(--x);top:var(--y);width:var(--s);height:calc(var(--s)*1.25);opacity:.55;transform:rotate(var(--r))}
+.amb .to path{fill:none;stroke:var(--c);stroke-width:.8;vector-effect:non-scaling-stroke;stroke-dasharray:1;stroke-dashoffset:1}
+.amb .sw{position:absolute;top:-10%;bottom:-10%;width:28%;left:-40%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-18deg)}
+@media (prefers-reduced-motion:no-preference){
+ .hbg .o1{animation:awA 26s ease-in-out infinite alternate}.hbg .o2{animation:awB 32s ease-in-out infinite alternate}
+ .hbg .dg{animation:dg 30s linear infinite}
+ .hbg .rg{animation:rg var(--d) ease-out var(--dl) infinite}
+ .hbg .tooth{animation:flt 14s ease-in-out infinite alternate}
+ .hbg .sweep{animation:sweep 11s ease-in-out 2.5s infinite}
+ .pwrap .frame img{animation:kb 22s ease-in-out infinite alternate}
+ .stage .halo{animation:halo 9s ease-in-out infinite}
+ .amb .aw.wa{animation:awA 28s ease-in-out infinite alternate}.amb .aw.wb{animation:awB 34s ease-in-out infinite alternate}
+ .amb .dg{animation:dg 36s linear infinite}
+ .amb .gl{animation:gl 40s linear infinite}
+ .amb .rg{animation:rg var(--d) ease-out var(--dl) infinite}
+ .amb.on .to path{animation:draw 4s var(--ease) forwards}
+ .amb .to{animation:flt 18s ease-in-out infinite alternate}
+ .amb .sw{animation:sweep 14s ease-in-out infinite}
+ .ftr .big{animation:flt 20s ease-in-out infinite alternate}
+ .amb.off *,.hbg.off *{animation-play-state:paused!important}
+}
+@keyframes awA{to{transform:translate(8vmax,6vmax) scale(1.12)}}
+@keyframes awB{to{transform:translate(-7vmax,-5vmax) scale(.9)}}
+@keyframes dg{to{transform:translate(24px,24px)}}
+@keyframes gl{to{background-position:64px 64px,64px 64px}}
+@keyframes rg{0%{transform:scale(.4);opacity:0}25%{opacity:.9}100%{transform:scale(1.2);opacity:0}}
+@keyframes flt{to{transform:translateY(-16px) rotate(calc(var(--r,0deg) + 4deg))}}
+@keyframes sweep{0%{left:-40%}60%,100%{left:130%}}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.05)}}
+@keyframes halo{0%,100%{transform:scale(.9);opacity:.5}50%{transform:scale(1.08);opacity:1}}
+@media (prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .js .rv,.js .pf,.js .qc,.js .gcard,.js .g,.js .g img,.js .about .ph,.js .about .txt p,.js .cvr .cvc,.js .cbox .crow,.js .qa.rq,.js .tabs.rvt button,.js .hero .ch,.js .hero .fx,.js .pwrap .frame,.js .pwrap .mat,.js .pwrap .tag{opacity:1!important;transform:none!important;transition:none!important}
+ .tl .line,.st::before,.qc .stars svg{transform:none!important}.mk{background-size:100% 100%}
+ .amb .rg,.hbg .rg{display:none}
+}
+
+@media (max-width:1080px){
+ .nav a:not(.btn),.nav .btn{display:none}.burger{display:flex}
+ .hero .wrap{grid-template-columns:1fr;gap:56px}
+ .proof .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .about .cols,.tx,.cv .cols,.ct,.rev .box{grid-template-columns:1fr;gap:28px}
+ .fq{grid-template-columns:1fr}
+ .ftr .wrap{grid-template-columns:1fr 1fr}.ftr .wrap>div:first-child{grid-column:1/-1}
+}
+@media (max-width:760px){
+ body{font-size:14.5px}
+ .wrap{padding:0 20px}
+ .sec{padding:80px 0}
+ .hdr .wrap{height:68px}
+ .brand small{display:none}.brand b{font-size:18px}.mark{width:34px;height:34px}
+ .hero{min-height:auto}
+ .hero .wrap{padding-top:96px;padding-bottom:84px}
+ .hero h1 .nm{font-size:44px}
+ .pwrap{width:calc(100% - 26px);justify-self:start}
+ .pwrap .mat{inset:16px -16px -16px 16px}
+ .pwrap .tag{left:10px;bottom:-22px}
+ .pwrap .tag2{right:-14px;top:-18px;left:auto;bottom:auto}
+ .hbg .rg{left:60%;top:70%}
+ .proof{margin-top:-40px}
+ .pf{padding:16px}.pf .k{font-size:24px}.pf .l{font-size:12px}
+ .spanel{padding:24px 20px;min-height:0}.spanel ul{grid-template-columns:1fr}
+ .stage{min-height:300px}
+ .tl{padding:28px 22px 28px 52px}.tl::before,.tl .line{left:26px}.st::before{left:-32px}.tl h3{margin-left:-22px}
+ .cvc{padding:26px 22px}.langs{grid-template-columns:1fr 1fr 1fr;gap:8px}.lg{padding:10px 6px}.lg b{font-size:17px}
+ .row{flex-direction:column}.g{flex:none;width:100%}
+ .qc{padding:36px 26px}
+ .svc,.gal{border-radius:32px 32px 0 0}.gal{border-radius:32px}
+ .cbox{padding:26px 20px}
+ .map{min-height:340px}
+ .ftr .wrap{grid-template-columns:1fr}
+ .mbar{display:grid}.totop{display:none}
+}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Dentist","@id":"#practice","name":"Ζορμπά Θωμαή | Χειρουργός Οδοντίατρος","alternateName":"Thomai Zormpa, Dental Surgeon","image":"assets/img/cheirourgos-odontiatros-zormpa-thomai.webp","telephone":"+30 210 751 5990","address":{"@type":"PostalAddress","streetAddress":"Φιλολάου 55","addressLocality":"Αθήνα","addressRegion":"Παγκράτι","postalCode":"116 33","addressCountry":"GR"},"geo":{"@type":"GeoCoordinates","latitude":37.9653245,"longitude":23.7502615},"areaServed":["Παγκράτι","Βύρωνας","Καισαριανή","Υμηττός","Νέο Παγκράτι","Αθήνα"],"availableLanguage":["el","en","fr","it"],"foundingDate":"2000","founder":{"@id":"#person"}},
+{"@type":"Person","@id":"#person","name":"Θωμαή Ζορμπά","alternateName":"Thomai Zormpa","jobTitle":"Χειρουργός Οδοντίατρος, DDS, MSc Dental Biomaterials","alumniOf":{"@type":"CollegeOrUniversity","name":"Οδοντιατρική Σχολή, Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών","url":"https://www.dent.uoa.gr"},"knowsLanguage":["el","en","fr","it"],"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"degree","name":"DDS"},{"@type":"EducationalOccupationalCredential","credentialCategory":"degree","name":"MSc Dental Biomaterials"}]},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Κάθε πότε χρειάζομαι έλεγχο και καθαρισμό;","acceptedAnswer":{"@type":"Answer","text":"Για τους περισσότερους ανθρώπους αρκεί ένας προληπτικός έλεγχος με καθαρισμό κάθε έξι μήνες. Αν έχετε ουλίτιδα, περιοδοντίτιδα ή πολλές αποκαταστάσεις, μπορεί να σας προτείνουμε συχνότερες επισκέψεις. Ο τακτικός έλεγχος εντοπίζει τα προβλήματα νωρίς, όταν η αντιμετώπισή τους είναι απλούστερη."}},
+{"@type":"Question","name":"Πονάει η απονεύρωση;","acceptedAnswer":{"@type":"Answer","text":"Η ενδοδοντική θεραπεία γίνεται με τοπική αναισθησία, οπότε κατά τη διάρκειά της δεν πονάτε. Συνήθως ανακουφίζει από τον πόνο που προκαλεί η φλεγμονή. Μετά μπορεί να υπάρξει μια ελαφριά ευαισθησία για λίγες ημέρες, που περνά με απλά παυσίπονα."}},
+{"@type":"Question","name":"Είμαι κατάλληλος για εμφύτευμα;","acceptedAnswer":{"@type":"Answer","text":"Τα εμφυτεύματα αντικαθιστούν δόντια που λείπουν με σταθερό και φυσικό αποτέλεσμα. Η καταλληλότητα κρίνεται μετά από κλινική εξέταση και ακτινογραφίες, που δείχνουν την ποσότητα του οστού και τη γενική κατάσταση του στόματος. Στο πρώτο ραντεβού συζητάμε όλες τις επιλογές."}},
+{"@type":"Question","name":"Τι διαφέρει η στεφάνη από την όψη;","acceptedAnswer":{"@type":"Answer","text":"Η στεφάνη καλύπτει ολόκληρο το δόντι και το προστατεύει όταν έχει χάσει μεγάλο μέρος του. Η όψη είναι ένα λεπτό κέλυφος που τοποθετείται στην μπροστινή επιφάνεια και βελτιώνει κυρίως το χρώμα και το σχήμα. Η επιλογή εξαρτάται από το πόσο υγιές είναι το δόντι."}},
+{"@type":"Question","name":"Πότε χρειάζομαι νάρθηκα βρυγμού;","acceptedAnswer":{"@type":"Answer","text":"Αν σφίγγετε ή τρίζετε τα δόντια σας, συνήθως στον ύπνο, ο νάρθηκας βρυγμού προστατεύει τα δόντια από τη φθορά και ανακουφίζει τους μύες της γνάθου. Κατασκευάζεται ειδικά για το δικό σας στόμα, ώστε να είναι άνετος και να εφαρμόζει σωστά."}},
+{"@type":"Question","name":"Είναι ασφαλής η λεύκανση;","acceptedAnswer":{"@type":"Answer","text":"Ναι, όταν γίνεται υπό την καθοδήγηση οδοντιάτρου και αφού ελεγχθεί ότι τα δόντια και τα ούλα είναι υγιή. Μπορεί να προκαλέσει παροδική ευαισθησία. Οι εμφράξεις και οι στεφάνες δεν λευκαίνονται, γι' αυτό τις λαμβάνουμε υπόψη από την αρχή."}},
+{"@type":"Question","name":"Πότε χρειάζεται χειρουργική εξαγωγή;","acceptedAnswer":{"@type":"Answer","text":"Χειρουργική εξαγωγή χρειάζεται όταν ένα δόντι δεν μπορεί να αφαιρεθεί απλά, για παράδειγμα ένας έγκλειστος φρονιμίτης ή ένα δόντι σπασμένο κάτω από το ούλο. Γίνεται με τοπική αναισθησία και σας δίνουμε αναλυτικές οδηγίες για την επούλωση."}},
+{"@type":"Question","name":"Πώς κλείνω ραντεβού;","acceptedAnswer":{"@type":"Answer","text":"Καλέστε μας στο 210 751 5990 ή στο 697 457 2750. Το ιατρείο βρίσκεται στο Παγκράτι, Φιλολάου 55, και δέχεται κατόπιν ραντεβού από Δευτέρα έως Παρασκευή. Αν έχετε πόνο, πείτε το στην κλήση, ώστε να σας εξυπηρετήσουμε το συντομότερο."}}
+]}
+]}
+</script>
+</head>
+<body id="top">
+<a class="skip" href="#main" data-en="Skip to content">Μετάβαση στο περιεχόμενο</a>
+<div class="prog" aria-hidden="true"></div>
+
+<div class="intro" id="intro" aria-hidden="true">
+ <svg viewBox="0 0 48 48"><circle class="o" cx="24" cy="24" r="22.5" pathLength="1"/><path class="t" pathLength="1" d="M15 16.5c0-4.2 3-6.2 6-5.2 1.2.4 2 .9 3 .9s1.8-.5 3-.9c3-1 6 1 6 5.2 0 3.3-1.2 5.4-2 7.6-.9 2.6-1.1 5.5-1.6 8.3-.4 2.3-1 4-2.2 4-1.6 0-1.6-3.2-2-5.6-.3-1.6-.6-2.6-1.2-2.6s-.9 1-1.2 2.6c-.4 2.4-.4 5.6-2 5.6-1.2 0-1.8-1.7-2.2-4-.5-2.8-.7-5.7-1.6-8.3-.8-2.2-2-4.3-2-7.6z"/></svg>
+ <div class="nm" id="inm"></div>
+</div>
+
+<header class="hdr" id="hdr">
+ <div class="wrap">
+  <a class="brand" href="#top" aria-label="Θωμαή Ζορμπά — αρχή σελίδας" data-en-aria="Thomai Zormpa — back to top">
+   <svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><circle class="o" cx="24" cy="24" r="22.5"/><path class="t" d="M15 16.5c0-4.2 3-6.2 6-5.2 1.2.4 2 .9 3 .9s1.8-.5 3-.9c3-1 6 1 6 5.2 0 3.3-1.2 5.4-2 7.6-.9 2.6-1.1 5.5-1.6 8.3-.4 2.3-1 4-2.2 4-1.6 0-1.6-3.2-2-5.6-.3-1.6-.6-2.6-1.2-2.6s-.9 1-1.2 2.6c-.4 2.4-.4 5.6-2 5.6-1.2 0-1.8-1.7-2.2-4-.5-2.8-.7-5.7-1.6-8.3-.8-2.2-2-4.3-2-7.6z"/></svg>
+   <span><b data-en="Thomai Zormpa">Θωμαή Ζορμπά</b><small data-en="Dental surgeon · Pagkrati">Χειρουργός Οδοντίατρος · Παγκράτι</small></span>
+  </a>
+  <nav class="nav" aria-label="Κύρια πλοήγηση" data-en-aria="Main navigation">
+   <a href="#about" data-en="About">Η ιατρός</a>
+   <a href="#services" data-en="Services">Υπηρεσίες</a>
+   <a href="#cv" data-en="CV">Βιογραφικό</a>
+   <a href="#space" data-en="The practice">Ο χώρος</a>
+   <a href="#contact" data-en="Contact">Επικοινωνία</a>
+   <div class="lang" role="group" aria-label="Γλώσσα / Language">
+    <button type="button" data-lang="el" aria-pressed="true"><span class="flag" aria-hidden="true"><svg viewBox="0 0 27 18" preserveAspectRatio="xMidYMid slice"><rect width="27" height="18" fill="#0D5EAF"/><path d="M0 3h27M0 9h27M0 15h27" stroke="#fff" stroke-width="2"/><rect width="10" height="10" fill="#0D5EAF"/><path d="M5 0v10M0 5h10" stroke="#fff" stroke-width="2"/></svg></span>EL</button>
+    <button type="button" data-lang="en" aria-pressed="false"><span class="flag" aria-hidden="true"><svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice"><clipPath id="uk1"><path d="M0 0v30h60V0z"/></clipPath><g clip-path="url(#uk1)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg></span>EN</button>
+   </div>
+   <a class="btn btn-lil" href="tel:+302107515990"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span data-en="Book">Ραντεβού</span></a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Άνοιγμα μενού" data-en-aria="Open menu" aria-expanded="false" aria-controls="mnav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg></button>
+ </div>
+</header>
+
+<div class="mnav" id="mnav" aria-hidden="true">
+ <div class="top">
+  <a class="brand" href="#top" data-close aria-label="Αρχή σελίδας" data-en-aria="Back to top"><svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><circle class="o" cx="24" cy="24" r="22.5" style="stroke:rgba(255,255,255,.35)"/><path class="t" style="stroke:#9D92C6" d="M15 16.5c0-4.2 3-6.2 6-5.2 1.2.4 2 .9 3 .9s1.8-.5 3-.9c3-1 6 1 6 5.2 0 3.3-1.2 5.4-2 7.6-.9 2.6-1.1 5.5-1.6 8.3-.4 2.3-1 4-2.2 4-1.6 0-1.6-3.2-2-5.6-.3-1.6-.6-2.6-1.2-2.6s-.9 1-1.2 2.6c-.4 2.4-.4 5.6-2 5.6-1.2 0-1.8-1.7-2.2-4-.5-2.8-.7-5.7-1.6-8.3-.8-2.2-2-4.3-2-7.6z"/></svg><span><b data-en="Thomai Zormpa">Θωμαή Ζορμπά</b></span></a>
+  <button class="x" id="mclose" aria-label="Κλείσιμο μενού" data-en-aria="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+ </div>
+ <nav aria-label="Μενού κινητού" data-en-aria="Mobile menu">
+  <a href="#about" data-close data-en="About">Η ιατρός</a>
+  <a href="#services" data-close data-en="Services">Υπηρεσίες</a>
+  <a href="#cv" data-close data-en="CV">Βιογραφικό</a>
+  <a href="#space" data-close data-en="The practice">Ο χώρος</a>
+  <a href="#faq" data-close data-en="Questions">Ερωτήσεις</a>
+  <a href="#contact" data-close data-en="Contact">Επικοινωνία</a>
+ </nav>
+ <div class="lang" role="group" aria-label="Γλώσσα / Language">
+  <button type="button" data-lang="el" aria-pressed="true"><span class="flag" aria-hidden="true"><svg viewBox="0 0 27 18" preserveAspectRatio="xMidYMid slice"><rect width="27" height="18" fill="#0D5EAF"/><path d="M0 3h27M0 9h27M0 15h27" stroke="#fff" stroke-width="2"/><rect width="10" height="10" fill="#0D5EAF"/><path d="M5 0v10M0 5h10" stroke="#fff" stroke-width="2"/></svg></span>EL</button>
+  <button type="button" data-lang="en" aria-pressed="false"><span class="flag" aria-hidden="true"><svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice"><clipPath id="uk2"><path d="M0 0v30h60V0z"/></clipPath><g clip-path="url(#uk2)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg></span>EN</button>
+ </div>
+ <a class="btn btn-lil" href="tel:+302107515990"><span data-en="Call 210 751 5990">Κλήση 210 751 5990</span></a>
+</div>
+
+<main id="main">
+<section class="hero" id="hero">
+ <div class="hbg" aria-hidden="true">
+  <div class="orb o1"></div><div class="orb o2"></div><div class="dg"></div>
+  <i class="rg" style="--s:520px;--d:10s;--dl:0s"></i><i class="rg" style="--s:700px;--d:10s;--dl:-3.3s"></i><i class="rg" style="--s:880px;--d:10s;--dl:-6.6s"></i>
+  <svg class="tooth" viewBox="0 0 48 60"><path pathLength="1" d="M8 12c0-6 4.5-9 9-7.6 1.8.6 3 1.3 7 1.3s5.2-.7 7-1.3C35.5 3 40 6 40 12c0 5-1.8 8.2-3 11.4-1.4 3.9-1.7 8.3-2.4 12.5-.6 3.5-1.5 6-3.3 6-2.4 0-2.4-4.8-3-8.4-.5-2.4-.9-3.9-1.8-3.9s-1.3 1.5-1.8 3.9c-.6 3.6-.6 8.4-3 8.4-1.8 0-2.7-2.5-3.3-6-.7-4.2-1-8.6-2.4-12.5C9.8 20.2 8 17 8 12z"/></svg>
+  <div class="sweep"></div>
+ </div>
+ <div class="wrap">
+  <div class="hero-txt">
+   <p class="eyebrow fx" style="--d:.05s" data-en="Dental practice in Pagkrati · since 2000">Οδοντιατρείο στο Παγκράτι · από το 2000</p>
+   <h1><span class="nm" data-split data-en="Thomai Zormpa">Θωμαή Ζορμπά</span><span class="role fx" style="--d:.6s"><span data-en="Dental surgeon">Χειρουργός Οδοντίατρος</span><em>DDS, MSc Dental Biomaterials</em></span></h1>
+   <p class="sub fx" style="--d:.75s" data-en="In our practice in Pagkrati we combine specialised knowledge and experience with continuous training and close attention to international scientific developments.">Στο ιατρείο μας στο Παγκράτι συνδυάζουμε την εξειδικευμένη γνώση και την εμπειρία με τη διαρκή εκπαίδευση και την ενασχόληση με τις διεθνείς επιστημονικές εξελίξεις.</p>
+   <div class="ctas fx" style="--d:.9s">
+    <a class="btn btn-lil mag" href="tel:+302107515990"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span data-en="Book an appointment">Κλείστε ραντεβού</span></a>
+    <a class="tlink" href="#services" data-en="Our services">Οι υπηρεσίες μας</a>
+   </div>
+   <div class="meta fx" style="--d:1.05s">
+    <div><b data-en="UoA">ΕΚΠΑ</b><span data-en="School of Dentistry, 1999">Οδοντιατρική Σχολή, 1999</span></div>
+    <div><b>MSc</b><span data-en="Dental Biomaterials">Οδοντιατρικά Βιοϋλικά</span></div>
+    <div><b data-en="Pagkrati">Παγκράτι</b><span data-en="Filolaou 55">Φιλολάου 55</span></div>
+   </div>
+  </div>
+  <div class="pwrap">
+   <div class="mat"></div>
+   <div class="frame"><picture><img src="assets/img/cheirourgos-odontiatros-zormpa-thomai.webp" srcset="assets/img/cheirourgos-odontiatros-zormpa-thomai-700.webp 700w, assets/img/cheirourgos-odontiatros-zormpa-thomai.webp 1300w" sizes="(max-width:760px) 90vw, 470px" width="1300" height="1613" alt="Η χειρουργός οδοντίατρος Θωμαή Ζορμπά στο οδοντιατρείο της στο Παγκράτι" data-en-alt="Dental surgeon Thomai Zormpa at her practice in Pagkrati" fetchpriority="high"></picture></div>
+   <div class="tag tag2"><span data-en="In Pagkrati since">Στο Παγκράτι από το</span><b>2000</b></div>
+   <div class="tag"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg><span><b>4,8 <span class="s">★★★★★</span></b><span data-en="Google reviews">Αξιολογήσεις Google</span></span></div>
+  </div>
+ </div>
+</section>
+
+<section class="proof" aria-label="Στοιχεία" data-en-aria="Highlights">
+ <div class="wrap grid">
+  <div class="pf" style="--i:0"><div class="k">DDS</div><div class="l" data-en="School of Dentistry, National and Kapodistrian University of Athens">Οδοντιατρική Σχολή, Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών</div></div>
+  <div class="pf" style="--i:1"><div class="k">MSc</div><div class="l" data-en="Postgraduate degree in Dental Biomaterials, University of Athens">Μεταπτυχιακό στα Οδοντιατρικά Βιοϋλικά, ΕΚΠΑ</div></div>
+  <div class="pf" style="--i:2"><div class="k"><span data-count="25" data-suf="+">25+</span></div><div class="l" data-en="Years of private practice, since 2000">Χρόνια ιδιωτικού ιατρείου, από το 2000</div></div>
+  <div class="pf" style="--i:3"><div class="k"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg><span data-count="4.8" data-dec="1">4,8</span><small>★★★★★</small></div><div class="l" data-en="Patient rating on Google">Αξιολόγηση ασθενών στο Google</div></div>
+ </div>
+</section>
+
+<section class="sec about" id="about" data-amb="rings">
+ <div class="wrap">
+  <div class="center rv">
+   <p class="eyebrow" data-en="The dentist">Η ιατρός</p>
+   <h2 data-en="Experience, knowledge, continuous training">Εμπειρία, γνώση, διαρκής εκπαίδευση</h2>
+  </div>
+  <div class="cols">
+   <figure class="ph rvp" data-lb style="margin:0"><div class="fr"><img src="assets/img/odontiatros-zormpa-portreto.webp" width="686" height="625" loading="lazy" alt="Η οδοντίατρος Θωμαή Ζορμπά στο ιατρείο της" data-en-alt="Dentist Thomai Zormpa in her surgery"></div></figure>
+   <div class="txt rvx">
+    <p class="big" data-en="In 1994 Thomai Zormpa entered the School of Dentistry of the University of Athens (<a class='uoa' href='https://www.dent.uoa.gr' target='_blank' rel='noopener'>www.dent.uoa.gr</a>), graduating in 1999.">Το 1994 η Θωμαή Ζορμπά εισήχθη στην Οδοντιατρική Σχολή Αθηνών (<a class="uoa" href="https://www.dent.uoa.gr" target="_blank" rel="noopener">www.dent.uoa.gr</a>), από όπου αποφοίτησε το 1999.</p>
+    <p data-en="From 2000 to 2002 she continued her postgraduate studies at the same university, where she obtained an MSc in Dental Biomaterials. At the same time she was a scientific associate at the clinic of the School of Dentistry. Since 2000 she has run her own private practice.">Από το 2000 ως το 2002 συνέχισε τις μεταπτυχιακές της σπουδές στο ίδιο πανεπιστήμιο, όπου απέκτησε MSc στα Οδοντιατρικά Βιοϋλικά. Παράλληλα ήταν επιστημονική συνεργάτις στην κλινική της Οδοντιατρικής Σχολής. Από το 2000 διατηρεί ιδιωτικό ιατρείο.</p>
+    <p data-en="In our practice, the experienced dentist Thomai Zormpa <span class='mk'>and selected associates of various specialties</span> combine specialised knowledge and experience with continuous training and close attention to international scientific developments.">Στο ιατρείο μας, η έμπειρη οδοντίατρος Θωμαή Ζορμπά <span class="mk">και επιλεγμένοι συνεργάτες διαφόρων ειδικοτήτων</span> συνδυάζουν την εξειδικευμένη γνώση και την εμπειρία με τη διαρκή εκπαίδευση και την ενασχόληση με τις διεθνείς επιστημονικές εξελίξεις.</p>
+    <div class="sig"><b data-en="Thomai Zormpa">Θωμαή Ζορμπά</b><span data-en="Dental surgeon · DDS, MSc Dental Biomaterials">Χειρουργός Οδοντίατρος · DDS, MSc Dental Biomaterials</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec svc" id="services" data-amb="grid">
+ <div class="wrap">
+  <div class="center rv">
+   <p class="eyebrow" data-en="Services">Υπηρεσίες</p>
+   <h2 data-en="Complete care, from prevention to implants">Ολοκληρωμένη φροντίδα, από την πρόληψη ως τα εμφυτεύματα</h2>
+   <p class="lead" data-en="Choose a category and see which part of the tooth each treatment cares for.">Επιλέξτε κατηγορία και δείτε σε ποιο σημείο του δοντιού αφορά κάθε θεραπεία.</p>
+  </div>
+  <div class="tx">
+   <div class="stage rv" aria-hidden="true">
+    <div class="halo"></div>
+    <svg class="tth" viewBox="0 0 200 270" id="tth">
+     <path class="f" data-z="gum" d="M8 150 C40 132 66 140 100 134 C134 140 160 132 192 150 L192 196 L8 196Z"/>
+     <path class="f" data-z="crown" d="M44 74 C44 34 72 26 100 38 C128 26 156 34 156 74 C156 102 148 118 144 132 L56 132 C52 118 44 102 44 74Z"/>
+     <path class="p" data-z="bone" d="M8 200 C60 206 140 206 192 200 M8 222 C60 228 140 228 192 222 M8 244 C60 250 140 250 192 244"/>
+     <path class="p" data-z="gum" d="M8 150 C40 132 66 140 100 134 C134 140 160 132 192 150"/>
+     <path class="p" data-z="root" d="M60 130 C62 172 66 212 78 240 C86 254 94 242 94 226 L100 176 L106 226 C106 242 114 254 122 240 C134 212 138 172 140 130"/>
+     <path class="p" data-z="crown" d="M44 74 C44 34 72 26 100 38 C128 26 156 34 156 74 C156 102 148 118 144 132 L56 132 C52 118 44 102 44 74Z"/>
+     <path class="p" data-z="enamel" d="M58 62 C62 46 78 42 92 48 M108 48 C122 42 138 46 142 62"/>
+     <path class="p" data-z="pulp" d="M82 92 C84 76 94 76 100 84 C106 76 116 76 118 92 L114 128 L110 202 M86 128 L90 202 M86 128 C90 118 110 118 114 128"/>
+     <path class="p opt" data-z="guard" d="M34 76 C34 22 76 12 100 26 C124 12 166 22 166 76 C166 96 160 112 156 124"/>
+     <path class="p opt" data-z="cap" stroke-dasharray="5 6" d="M38 74 C38 28 72 18 100 32 C128 18 162 28 162 74 C162 104 152 122 148 136 L52 136 C48 122 38 104 38 74Z"/>
+     <path class="p opt" data-z="implant" d="M92 150 L108 150 L106 236 L100 250 L94 236Z M90 166 L110 166 M90 182 L110 182 M91 198 L109 198 M92 214 L108 214"/>
+    </svg>
+    <div class="cap"><span id="capA" data-en="Crown">Μύλη</span><span id="capB" data-en="Root">Ρίζα</span></div>
+   </div>
+   <div>
+    <div class="tabs rvt" role="tablist" id="tabs" aria-label="Κατηγορίες υπηρεσιών" data-en-aria="Service categories"></div>
+    <div class="spanel" role="tabpanel" id="spanel" aria-live="polite"><div class="in2" id="sin"></div></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec cv" id="cv" data-amb="tooth">
+ <div class="wrap">
+  <div class="center rv">
+   <p class="eyebrow" data-en="CV">Βιογραφικό</p>
+   <h2 data-en="Education and path">Σπουδές και πορεία</h2>
+  </div>
+  <div class="cols">
+   <div class="tl" id="tl">
+    <div class="line"></div>
+    <h3 data-en="Education & experience">Εκπαίδευση & εμπειρία</h3>
+    <div class="st"><span class="y">1994</span><b data-en="Admission to the School of Dentistry, University of Athens">Εισαγωγή στην Οδοντιατρική Σχολή Αθηνών</b><span data-en="National and Kapodistrian University of Athens">Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών</span></div>
+    <div class="st"><span class="y">1999</span><b data-en="Degree in Dentistry (DDS)">Πτυχίο Οδοντιατρικής (DDS)</b><span data-en="School of Dentistry, University of Athens">Οδοντιατρική Σχολή, ΕΚΠΑ</span></div>
+    <div class="st"><span class="y">2000</span><b data-en="Private dental practice">Ιδιωτικό οδοντιατρείο</b><span data-en="To this day · Filolaou 55, Pagkrati">Έως σήμερα · Φιλολάου 55, Παγκράτι</span></div>
+    <div class="st"><span class="y">2000 – 2002</span><b data-en="MSc in Dental Biomaterials">MSc στα Οδοντιατρικά Βιοϋλικά</b><span data-en="Postgraduate studies, University of Athens">Μεταπτυχιακές σπουδές, ΕΚΠΑ</span></div>
+    <div class="st"><span class="y">2000 – 2004</span><b data-en="Scientific associate, Department of Prosthodontics">Επιστημονική συνεργάτις, Τομέας Προσθετικής</b><span data-en="School of Dentistry, University of Athens">Οδοντιατρική Σχολή, ΕΚΠΑ</span></div>
+    <div class="st"><span class="y" data-en="Volunteer">Εθελοντικά</span><b data-en="Preventive dental programmes">Προληπτικά προγράμματα</b><span data-en="Hellenic Dental Association and Dental Association of Athens">Ελληνική Οδοντιατρική Ομοσπονδία και Οδοντιατρικός Σύλλογος Αθηνών</span></div>
+   </div>
+   <div class="cvr" id="cvr">
+    <div class="cvc">
+     <h3 data-en="Scientific work">Επιστημονικές εργασίες</h3>
+     <ol>
+      <li><span data-en="Advanced periodontitis – transition to edentulism – the role of interim dentures">Προχωρημένη περιοδοντίτιδα – μετάβαση στη νωδότητα – η συμβολή των ενδιάμεσων οδοντοστοιχιών</span><i data-en="Presented at the 20th Panhellenic Dental Congress">Παρουσιάστηκε στο 20ό Πανελλήνιο Οδοντιατρικό Συνέδριο</i></li>
+      <li><span data-en="Design and fabrication of dentures with a rotational path of insertion">Η σχεδίαση και κατασκευή οδοντοστοιχιών με περιστροφική φορά ένθεσης</span><i data-en="Published in «Hellenic Stomatological Review», vol. 47, 2003">Δημοσιεύτηκε στα «Ελληνικά Στοματολογικά Χρονικά», τόμος 47, 2003</i></li>
+      <li><span data-en="The effect of photo-ageing on the colour change of silicone elastomers for maxillofacial prostheses">Η επίδραση της φωτογήρανσης στη χρωματική μεταβολή σιλικονούχων ελαστομερών υλικών για γναθοπροσωπικές προσθέσεις</span><i data-en="Postgraduate thesis, Dental Materials Laboratory">Μεταπτυχιακή διπλωματική εργασία, Εργαστήριο Οδοντιατρικών Υλικών</i></li>
+      <li><span data-en="New materials and techniques in endodontics: the use of MTA in iatrogenic perforations">Νέα υλικά και τεχνικές στην ενδοδοντία: η χρήση του MTA στις ιατρογενείς διατρήσεις</span></li>
+     </ol>
+    </div>
+    <div class="cvc">
+     <h3 data-en="Languages & continuing education">Γλώσσες & συνεχής επιμόρφωση</h3>
+     <div class="langs">
+      <div class="lg"><b data-en="English">Αγγλικά</b><span>Cambridge Proficiency</span></div>
+      <div class="lg"><b data-en="French">Γαλλικά</b><span data-en="Level B1">Επίπεδο B1</span></div>
+      <div class="lg"><b data-en="Italian">Ιταλικά</b><span>Medio</span></div>
+     </div>
+     <p class="more" data-en="She attends scientific congresses and symposia every year. Certificates are available on request.">Συμμετέχει σε επιστημονικά συνέδρια και συμπόσια σε ετήσια βάση. Πιστοποιητικά διαθέσιμα εφόσον ζητηθούν.</p>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec gal" id="space" data-amb="sweep">
+ <div class="wrap">
+  <div class="center rv">
+   <p class="eyebrow" data-en="The practice">Ο χώρος</p>
+   <h2 data-en="A modern practice in Pagkrati">Ένα σύγχρονο ιατρείο στο Παγκράτι</h2>
+   <p class="lead" data-en="Bright, clean and carefully organised rooms, so that every visit feels calm and safe.">Φωτεινοί, καθαροί και προσεγμένοι χώροι, ώστε κάθε επίσκεψη να είναι ήρεμη και ασφαλής.</p>
+  </div>
+  <div class="rows">
+   <div class="row">
+    <figure class="g" style="--a:.75;--i:0" data-lb><img src="assets/img/odontiatros-pagkrati-zormpa-ergasia-700.webp" srcset="assets/img/odontiatros-pagkrati-zormpa-ergasia-700.webp 700w, assets/img/odontiatros-pagkrati-zormpa-ergasia.webp 1200w" sizes="(max-width:760px) 100vw, 320px" width="1200" height="1600" loading="lazy" alt="Η οδοντίατρος εξετάζει ασθενή στο οδοντιατρείο στο Παγκράτι" data-en-alt="The dentist treating a patient at the practice in Pagkrati"><figcaption data-en="At work">Στην πράξη</figcaption></figure>
+    <figure class="g" style="--a:1.3333;--i:1" data-lb><img src="assets/img/odontiatreio-pagkrati-monada-800.webp" srcset="assets/img/odontiatreio-pagkrati-monada-800.webp 800w, assets/img/odontiatreio-pagkrati-monada.webp 1600w" sizes="(max-width:760px) 100vw, 560px" width="1600" height="1200" loading="lazy" alt="Η οδοντιατρική μονάδα του ιατρείου στο Παγκράτι" data-en-alt="The dental unit of the practice in Pagkrati"><figcaption data-en="Dental unit">Οδοντιατρική μονάδα</figcaption></figure>
+    <figure class="g" style="--a:.75;--i:2" data-lb><img src="assets/img/odontiatreio-pagkrati-grafeio-700.webp" srcset="assets/img/odontiatreio-pagkrati-grafeio-700.webp 700w, assets/img/odontiatreio-pagkrati-grafeio.webp 1200w" sizes="(max-width:760px) 100vw, 320px" width="1200" height="1600" loading="lazy" alt="Το γραφείο υποδοχής του οδοντιατρείου" data-en-alt="The consultation office of the practice"><figcaption data-en="Office">Γραφείο</figcaption></figure>
+   </div>
+   <div class="row">
+    <figure class="g" style="--a:1.3333;--i:3" data-lb><img src="assets/img/odontiatreio-pagkrati-iatreio-800.webp" srcset="assets/img/odontiatreio-pagkrati-iatreio-800.webp 800w, assets/img/odontiatreio-pagkrati-iatreio.webp 1600w" sizes="(max-width:760px) 100vw, 580px" width="1600" height="1200" loading="lazy" alt="Το χειρουργείο του οδοντιατρείου με την οδοντιατρική έδρα" data-en-alt="The surgery room with the dental chair"><figcaption data-en="Surgery room">Χώρος θεραπείας</figcaption></figure>
+    <figure class="g" style="--a:1.4134;--i:4" data-lb><img src="assets/img/odontiatreio-pagkrati-anamoni-800.webp" srcset="assets/img/odontiatreio-pagkrati-anamoni-800.webp 800w, assets/img/odontiatreio-pagkrati-anamoni.webp 1600w" sizes="(max-width:760px) 100vw, 600px" width="1600" height="1132" loading="lazy" alt="Ο χώρος αναμονής του οδοντιατρείου στο Παγκράτι" data-en-alt="The waiting room of the practice in Pagkrati"><figcaption data-en="Waiting room">Χώρος αναμονής</figcaption></figure>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec rev" id="reviews" data-amb="rings2">
+ <div class="wrap">
+  <div class="center rv">
+   <p class="eyebrow" data-en="Reviews">Κριτικές</p>
+   <h2 data-en="What patients say">Τι λένε οι ασθενείς</h2>
+  </div>
+  <div class="box">
+   <figure class="qc" style="margin:0">
+    <div class="stars" aria-label="5/5"><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg></div>
+    <blockquote lang="el">Πρώτη φορά επισκέφτηκα τη γιατρό και γνώρισα μια άριστη επαγγελματία, ευγενέστατη, συνεπέστατη, χωρίς καμία καθυστέρηση στους χρόνους των ραντεβού. Σου εμπνέει εμπιστοσύνη και ασφάλεια από την πρώτη στιγμή. Χωρίς πόνο! Τηρεί τους κανόνες υγιεινής (covid), αξία ανεκτίμητη!!! Συστήνεται ανεπιφύλακτα!.</blockquote>
+    <figcaption class="who"><span class="av">J</span><span>jenny rekka</span><svg viewBox="0 0 48 48" aria-label="Google"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg></figcaption>
+   </figure>
+   <div class="gcard">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>
+    <b>4,8</b><span class="s">★★★★★</span>
+    <p data-en="Patient rating on Google">Αξιολόγηση ασθενών στο Google</p>
+    <a class="btn btn-line" href="https://www.google.com/maps/place/%CE%96%CE%BF%CF%81%CE%BC%CF%80%CE%AC+%CE%98%CF%89%CE%BC%CE%B1%CE%AE+%7C+%CE%A7%CE%B5%CE%B9%CF%81%CE%BF%CF%85%CF%81%CE%B3%CF%8C%CF%82+%CE%9F%CE%B4%CE%BF%CE%BD%CF%84%CE%AF%CE%B1%CF%84%CF%81%CE%BF%CF%82/@37.9653245,23.7502615,17z/data=!4m8!3m7!1s0x14a1bd6895d4562b:0x394c8b56a3cc950!8m2!3d37.9653245!4d23.7502615!9m1!1b1!16s%2Fg%2F1q67vj9p8" target="_blank" rel="noopener" data-en="Read the reviews on Google">Οι κριτικές στο Google</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec faq" id="faq" data-amb="dots">
+ <div class="wrap">
+  <div class="center rv">
+   <p class="eyebrow" data-en="Questions">Ερωτήσεις</p>
+   <h2 data-en="Frequently asked questions">Συχνές ερωτήσεις</h2>
+  </div>
+  <div class="fq" id="fq"></div>
+ </div>
+</section>
+
+<section class="sec contact" id="contact" data-amb="washes">
+ <div class="wrap">
+  <div class="center rv">
+   <p class="eyebrow" data-en="Contact">Επικοινωνία</p>
+   <h2 data-en="Book your appointment">Κλείστε το ραντεβού σας</h2>
+   <p class="lead" data-en="Call us and we will find a time that suits you.">Καλέστε μας και θα βρούμε μαζί την ώρα που σας εξυπηρετεί.</p>
+  </div>
+  <div class="ct">
+   <div class="cbox" id="cbox">
+    <a class="crow" style="--i:0" href="tel:+302107515990"><span class="ci"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><span><small data-en="Practice">Ιατρείο</small><b>210 751 5990</b></span></a>
+    <a class="crow" style="--i:1" href="tel:+306974572750"><span class="ci"><svg viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/></svg></span><span><small data-en="Mobile">Κινητό</small><b>697 457 2750</b></span></a>
+    <a class="crow" style="--i:2" href="https://www.google.com/maps/dir/?api=1&destination=37.9653245,23.7502615" target="_blank" rel="noopener"><span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><span><small data-en="Address">Διεύθυνση</small><address><b data-en="Filolaou 55, Pagkrati, Athens 116 33">Φιλολάου 55, Παγκράτι, Αθήνα 116 33</b></address></span></a>
+    <div class="crow" style="--i:3"><span class="ci"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><span><small data-en="Hours">Ωράριο</small><b data-en="Monday – Friday · by appointment">Δευτέρα – Παρασκευή · κατόπιν ραντεβού</b></span></div>
+    <div class="btns"><a class="btn btn-lil mag" href="tel:+302107515990"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span data-en="Call the practice">Καλέστε το ιατρείο</span></a><a class="btn btn-line" href="https://www.google.com/maps/dir/?api=1&destination=37.9653245,23.7502615" target="_blank" rel="noopener" data-en="Directions">Οδηγίες</a></div>
+    <p class="dir" data-en="The practice is in Pagkrati, at 55 Filolaou Street, on the corner with Chremonidou Street.">Το ιατρείο βρίσκεται στο Παγκράτι, στην οδό Φιλολάου 55, στη γωνία με την οδό Χρεμωνίδου.</p>
+   </div>
+   <div class="map" id="map"><iframe src="https://www.google.com/maps?q=%CE%96%CE%BF%CF%81%CE%BC%CF%80%CE%AC%20%CE%98%CF%89%CE%BC%CE%B1%CE%AE%20%CE%9F%CE%B4%CE%BF%CE%BD%CF%84%CE%AF%CE%B1%CF%84%CF%81%CE%BF%CF%82%2C%20%CE%A6%CE%B9%CE%BB%CE%BF%CE%BB%CE%AC%CE%BF%CF%85%2055%2C%20%CE%91%CE%B8%CE%AE%CE%BD%CE%B1%20116%2033&z=16&output=embed" title="Χάρτης: Φιλολάου 55, Παγκράτι" data-en-title="Map: Filolaou 55, Pagkrati" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="ftr" data-amb="footer">
+ <svg class="big" viewBox="0 0 48 60" aria-hidden="true"><path d="M8 12c0-6 4.5-9 9-7.6 1.8.6 3 1.3 7 1.3s5.2-.7 7-1.3C35.5 3 40 6 40 12c0 5-1.8 8.2-3 11.4-1.4 3.9-1.7 8.3-2.4 12.5-.6 3.5-1.5 6-3.3 6-2.4 0-2.4-4.8-3-8.4-.5-2.4-.9-3.9-1.8-3.9s-1.3 1.5-1.8 3.9c-.6 3.6-.6 8.4-3 8.4-1.8 0-2.7-2.5-3.3-6-.7-4.2-1-8.6-2.4-12.5C9.8 20.2 8 17 8 12z"/></svg>
+ <div class="wrap">
+  <div>
+   <a class="brand" href="#top" aria-label="Αρχή σελίδας" data-en-aria="Back to top"><svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><circle class="o" cx="24" cy="24" r="22.5"/><path class="t" d="M15 16.5c0-4.2 3-6.2 6-5.2 1.2.4 2 .9 3 .9s1.8-.5 3-.9c3-1 6 1 6 5.2 0 3.3-1.2 5.4-2 7.6-.9 2.6-1.1 5.5-1.6 8.3-.4 2.3-1 4-2.2 4-1.6 0-1.6-3.2-2-5.6-.3-1.6-.6-2.6-1.2-2.6s-.9 1-1.2 2.6c-.4 2.4-.4 5.6-2 5.6-1.2 0-1.8-1.7-2.2-4-.5-2.8-.7-5.7-1.6-8.3-.8-2.2-2-4.3-2-7.6z"/></svg><span><b data-en="Thomai Zormpa">Θωμαή Ζορμπά</b><small>DDS, MSc Dental Biomaterials</small></span></a>
+   <p style="margin-top:18px;max-width:340px" data-en="Dental surgeon with a private practice in Pagkrati since 2000.">Χειρουργός οδοντίατρος με ιδιωτικό ιατρείο στο Παγκράτι από το 2000.</p>
+  </div>
+  <div>
+   <h4 data-en="Contact">Επικοινωνία</h4>
+   <ul><li><a href="tel:+302107515990">210 751 5990</a></li><li><a href="tel:+306974572750">697 457 2750</a></li><li><address data-en="Filolaou 55, Pagkrati 116 33">Φιλολάου 55, Παγκράτι 116 33</address></li></ul>
+  </div>
+  <div>
+   <h4 data-en="Menu">Μενού</h4>
+   <ul><li><a href="#services" data-en="Services">Υπηρεσίες</a></li><li><a href="#cv" data-en="CV">Βιογραφικό</a></li><li><a href="#faq" data-en="Questions">Ερωτήσεις</a></li></ul>
+  </div>
+  <div class="bot"><span>© <span id="yr">2026</span> <span data-en="Thomai Zormpa · Dental surgeon">Θωμαή Ζορμπά · Χειρουργός Οδοντίατρος</span></span><span>Designed by <a href="https://advonmedia.com" target="_blank" rel="noopener">Advon Media</a></span></div>
+ </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Γρήγορες ενέργειες" data-en-aria="Quick actions">
+ <a href="tel:+302107515990"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span data-en="Call">Κλήση</span></a>
+ <a href="tel:+306974572750"><svg viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/></svg><span data-en="Mobile">Κινητό</span></a>
+ <a href="https://www.google.com/maps/dir/?api=1&destination=37.9653245,23.7502615" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-en="Directions">Οδηγίες</span></a>
+</nav>
+<button class="totop" id="totop" aria-label="Επιστροφή στην αρχή" data-en-aria="Back to top"><svg class="ring" viewBox="0 0 54 54"><circle cx="27" cy="27" r="25" pathLength="1"/></svg><svg class="ar" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Προβολή φωτογραφίας" data-en-aria="Photo viewer"><button id="lbx" aria-label="Κλείσιμο" data-en-aria="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button><img id="lbimg" alt=""></div>
+
+<script>
+(function(){
+var d=document,w=window,html=d.documentElement,RM=matchMedia('(prefers-reduced-motion:reduce)').matches,lang='el';
+function $(s,c){return (c||d).querySelector(s)}function $$(s,c){return [].slice.call((c||d).querySelectorAll(s))}
+d.getElementById('yr').textContent=new Date().getFullYear();
+
+/* ---------- services (the client's own list, every item kept) ---------- */
+var S=[
+ {z:['enamel','crown'],cap:[['Αδαμαντίνη','Enamel'],['Μύλη','Crown']],
+  el:['Προληπτική Οδοντιατρική','Η καλύτερη θεραπεία είναι αυτή που δεν χρειάζεται. Με τακτικό έλεγχο, καθαρισμό και απλές προληπτικές πράξεις εντοπίζουμε τα προβλήματα νωρίς και προστατεύουμε τα δόντια σας για χρόνια.',[['Στοματικός έλεγχος','Πλήρης εξέταση δοντιών, ούλων και στοματικού βλεννογόνου.'],['Καθαρισμός δοντιών – φθορίωση','Αφαίρεση πέτρας και χρωστικών, φθόριο για ανθεκτική αδαμαντίνη.'],['Ενδοστοματική ακτινογραφία','Λεπτομερής εικόνα για ασφαλή διάγνωση, με ελάχιστη ακτινοβολία.'],['Προληπτικές εμφράξεις','Σφράγιση των αυλακώσεων για προστασία από την τερηδόνα.']]],
+  en:['Preventive dentistry','The best treatment is the one you never need. With regular check-ups, cleaning and simple preventive care we catch problems early and protect your teeth for years.',[['Oral examination','A full check of teeth, gums and the soft tissues of the mouth.'],['Cleaning – fluoride treatment','Removal of tartar and stains, fluoride for stronger enamel.'],['Intraoral X-rays','A detailed image for a safe diagnosis, with minimal radiation.'],['Fissure sealants','Sealing the grooves of the teeth to protect them from decay.']]]},
+ {z:['crown'],cap:[['Μύλη','Crown'],['Ρίζα','Root']],
+  el:['Αποκατάσταση & Αισθητική','Αποκαθιστούμε δόντια που έχουν φθαρεί ή σπάσει με υλικά στο χρώμα του δοντιού, ώστε το αποτέλεσμα να είναι ανθεκτικό και να δείχνει φυσικό. Με τη λεύκανση το χαμόγελο αποκτά ξανά φωτεινότητα.',[['Λευκές εμφράξεις','Σύνθετες ρητίνες στο χρώμα του δοντιού, αόρατες και ανθεκτικές.'],['Ανασυστάσεις δοντιών','Επαναφορά σχήματος και λειτουργίας σε δόντια με μεγάλη απώλεια.'],['Λεύκανση','Ασφαλής λεύκανση υπό οδοντιατρική καθοδήγηση, για πιο φωτεινό χαμόγελο.']]],
+  en:['Restorative & aesthetic','We restore worn or broken teeth with tooth-coloured materials, so the result is durable and looks natural. With whitening, your smile regains its brightness.',[['White fillings','Tooth-coloured composite resins, invisible and durable.'],['Tooth reconstructions','Restoring shape and function to teeth with significant loss.'],['Whitening','Safe whitening under a dentist’s guidance, for a brighter smile.']]]},
+ {z:['pulp','root','gum'],cap:[['Πολφός','Pulp'],['Ούλα','Gums']],
+  el:['Ενδοδοντία & Περιοδοντολογία','Όταν η φλεγμονή φτάνει στο νεύρο του δοντιού ή στα ούλα, η σωστή θεραπεία σώζει το φυσικό σας δόντι. Η ενδοδοντική θεραπεία γίνεται με τοπική αναισθησία και σύγχρονα υλικά.',[['Ενδοδοντική θεραπεία','Απονεύρωση με σύγχρονα υλικά, για να κρατήσετε το φυσικό σας δόντι.'],['Θεραπεία περιοδοντίτιδας','Αντιμετώπιση της φλεγμονής των ούλων και του οστού που στηρίζει τα δόντια.']]],
+  en:['Endodontics & periodontics','When inflammation reaches the nerve of the tooth or the gums, the right treatment saves your natural tooth. Root canal treatment is done under local anaesthetic with modern materials.',[['Root canal treatment','Modern endodontic treatment, so you keep your natural tooth.'],['Periodontitis treatment','Treating inflammation of the gums and of the bone that supports the teeth.']]]},
+ {z:['guard','crown'],cap:[['Νάρθηκας','Guard'],['Μύλη','Crown']],
+  el:['Νάρθηκες','Εξατομικευμένοι νάρθηκες, κατασκευασμένοι ειδικά για το δικό σας στόμα, που προστατεύουν τα δόντια στον αθλητισμό και στον ύπνο και ανακουφίζουν τη γνάθο.',[['Αθλητικοί νάρθηκες','Προστασία δοντιών και χειλιών σε αθλήματα επαφής.'],['Νάρθηκες βρυγμού','Για όσους σφίγγουν ή τρίζουν τα δόντια, κυρίως στον ύπνο.']]],
+  en:['Mouthguards','Custom guards made for your own mouth, protecting your teeth during sport and sleep and relieving the jaw.',[['Sports mouthguards','Protection for teeth and lips in contact sports.'],['Night guards for bruxism','For people who clench or grind their teeth, mostly at night.']]]},
+ {z:['cap','crown','root'],cap:[['Στεφάνη','Crown cap'],['Ρίζα','Root']],
+  el:['Προσθετική Οδοντιατρική','Η προσθετική επαναφέρει τη λειτουργία και την αισθητική σε δόντια που έχουν χαθεί ή καταστραφεί. Με μεταπτυχιακή εξειδίκευση στα Οδοντιατρικά Βιοϋλικά, κάθε υλικό επιλέγεται με προσοχή για το δικό σας στόμα.',[['Στεφάνες','Καλύπτουν και προστατεύουν δόντια με μεγάλη απώλεια ουσίας.'],['Ένθετα – επένθετα','Συντηρητικές αποκαταστάσεις που διατηρούν περισσότερο υγιές δόντι.'],['Όψεις','Λεπτά κελύφη για χρώμα και σχήμα στα μπροστινά δόντια.'],['Γέφυρες','Αντικατάσταση δοντιών που λείπουν, στηριγμένη στα διπλανά.'],['Οδοντοστοιχίες','Ολικές ή μερικές, για σταθερή μάσηση και φυσική εμφάνιση.']]],
+  en:['Prosthodontics','Prosthodontics restores function and appearance to teeth that have been lost or damaged. With a master’s degree in Dental Biomaterials, every material is chosen with care for your mouth.',[['Crowns','Covering and protecting teeth with significant loss of structure.'],['Inlays – onlays','Conservative restorations that preserve more healthy tooth.'],['Veneers','Thin shells for colour and shape on the front teeth.'],['Bridges','Replacing missing teeth, supported by the neighbouring ones.'],['Dentures','Full or partial, for comfortable chewing and a natural look.']]]},
+ {z:['implant','bone','gum'],cap:[['Εμφύτευμα','Implant'],['Οστό','Bone']],
+  el:['Εμφυτεύματα & Χειρουργική','Τα εμφυτεύματα αντικαθιστούν δόντια που λείπουν με σταθερό και φυσικό αποτέλεσμα. Οι εξαγωγές, απλές και χειρουργικές, γίνονται με τοπική αναισθησία και με αναλυτικές οδηγίες για την επούλωση.',[['Εμφυτεύματα','Σταθερή αντικατάσταση δοντιών που λείπουν, με φυσική αίσθηση.'],['Απλή και χειρουργική εξαγωγή δοντιών','Από απλές εξαγωγές ως έγκλειστους φρονιμίτες.']]],
+  en:['Implants & oral surgery','Implants replace missing teeth with a stable, natural result. Extractions, simple and surgical, are done under local anaesthetic with clear instructions for healing.',[['Dental implants','A fixed replacement for missing teeth that feels natural.'],['Simple and surgical extractions','From simple extractions to impacted wisdom teeth.']]]}
+];
+var F=[
+ ['Κάθε πότε χρειάζομαι έλεγχο και καθαρισμό;','Για τους περισσότερους ανθρώπους αρκεί ένας προληπτικός έλεγχος με καθαρισμό κάθε έξι μήνες. Αν έχετε ουλίτιδα, περιοδοντίτιδα ή πολλές αποκαταστάσεις, μπορεί να σας προτείνουμε συχνότερες επισκέψεις. Ο τακτικός έλεγχος εντοπίζει τα προβλήματα νωρίς, όταν η αντιμετώπισή τους είναι απλούστερη.','How often do I need a check-up and cleaning?','For most people a preventive check-up with cleaning every six months is enough. If you have gingivitis, periodontitis or many restorations, we may suggest more frequent visits. Regular check-ups catch problems early, when treating them is simpler.'],
+ ['Πονάει η απονεύρωση;','Η ενδοδοντική θεραπεία γίνεται με τοπική αναισθησία, οπότε κατά τη διάρκειά της δεν πονάτε. Συνήθως ανακουφίζει από τον πόνο που προκαλεί η φλεγμονή. Μετά μπορεί να υπάρξει μια ελαφριά ευαισθησία για λίγες ημέρες, που περνά με απλά παυσίπονα.','Does a root canal hurt?','Root canal treatment is done under local anaesthetic, so you feel no pain during it. It usually relieves the pain caused by the inflammation. Afterwards there may be mild sensitivity for a few days, which passes with simple painkillers.'],
+ ['Είμαι κατάλληλος για εμφύτευμα;','Τα εμφυτεύματα αντικαθιστούν δόντια που λείπουν με σταθερό και φυσικό αποτέλεσμα. Η καταλληλότητα κρίνεται μετά από κλινική εξέταση και ακτινογραφίες, που δείχνουν την ποσότητα του οστού και τη γενική κατάσταση του στόματος. Στο πρώτο ραντεβού συζητάμε όλες τις επιλογές.','Am I suitable for an implant?','Implants replace missing teeth with a stable, natural result. Suitability is judged after a clinical examination and X-rays, which show the amount of bone and the overall condition of the mouth. At the first appointment we discuss all the options.'],
+ ['Τι διαφέρει η στεφάνη από την όψη;','Η στεφάνη καλύπτει ολόκληρο το δόντι και το προστατεύει όταν έχει χάσει μεγάλο μέρος του. Η όψη είναι ένα λεπτό κέλυφος που τοποθετείται στην μπροστινή επιφάνεια και βελτιώνει κυρίως το χρώμα και το σχήμα. Η επιλογή εξαρτάται από το πόσο υγιές είναι το δόντι.','What is the difference between a crown and a veneer?','A crown covers the whole tooth and protects it when much of it has been lost. A veneer is a thin shell placed on the front surface and mainly improves colour and shape. The choice depends on how healthy the tooth is.'],
+ ['Πότε χρειάζομαι νάρθηκα βρυγμού;','Αν σφίγγετε ή τρίζετε τα δόντια σας, συνήθως στον ύπνο, ο νάρθηκας βρυγμού προστατεύει τα δόντια από τη φθορά και ανακουφίζει τους μύες της γνάθου. Κατασκευάζεται ειδικά για το δικό σας στόμα, ώστε να είναι άνετος και να εφαρμόζει σωστά.','When do I need a night guard?','If you clench or grind your teeth, usually in your sleep, a night guard protects the teeth from wear and relieves the jaw muscles. It is made specifically for your mouth, so it is comfortable and fits properly.'],
+ ['Είναι ασφαλής η λεύκανση;','Ναι, όταν γίνεται υπό την καθοδήγηση οδοντιάτρου και αφού ελεγχθεί ότι τα δόντια και τα ούλα είναι υγιή. Μπορεί να προκαλέσει παροδική ευαισθησία. Οι εμφράξεις και οι στεφάνες δεν λευκαίνονται, γι\' αυτό τις λαμβάνουμε υπόψη από την αρχή.','Is whitening safe?','Yes, when it is done under a dentist’s guidance and after checking that teeth and gums are healthy. It may cause temporary sensitivity. Fillings and crowns do not whiten, so we take them into account from the start.'],
+ ['Πότε χρειάζεται χειρουργική εξαγωγή;','Χειρουργική εξαγωγή χρειάζεται όταν ένα δόντι δεν μπορεί να αφαιρεθεί απλά, για παράδειγμα ένας έγκλειστος φρονιμίτης ή ένα δόντι σπασμένο κάτω από το ούλο. Γίνεται με τοπική αναισθησία και σας δίνουμε αναλυτικές οδηγίες για την επούλωση.','When is a surgical extraction needed?','A surgical extraction is needed when a tooth cannot be removed simply — for example an impacted wisdom tooth or a tooth broken below the gum. It is done under local anaesthetic and we give you detailed instructions for healing.'],
+ ['Πώς κλείνω ραντεβού;','Καλέστε μας στο 210 751 5990 ή στο 697 457 2750. Το ιατρείο βρίσκεται στο Παγκράτι, Φιλολάου 55, και δέχεται κατόπιν ραντεβού από Δευτέρα έως Παρασκευή. Αν έχετε πόνο, πείτε το στην κλήση, ώστε να σας εξυπηρετήσουμε το συντομότερο.','How do I book an appointment?','Call us on 210 751 5990 or 697 457 2750. The practice is in Pagkrati, at Filolaou 55, and sees patients by appointment from Monday to Friday. If you are in pain, mention it when you call so we can see you as soon as possible.']
+];
+
+/* ---------- services explorer ---------- */
+var tabs=d.getElementById('tabs'),sin=d.getElementById('sin'),cur=0,tth=d.getElementById('tth');
+function drawTabs(){tabs.innerHTML=S.map(function(s,i){return '<button role="tab" id="tb'+i+'" aria-controls="spanel" aria-selected="'+(i===cur)+'" tabindex="'+(i===cur?0:-1)+'" style="--i:'+i+'">'+s[lang][0]+'</button>'}).join('')}
+function drawPanel(anim){var s=S[cur][lang];var h='<h3>'+s[0]+'</h3><p class="intro2">'+s[1]+'</p><ul>'+s[2].map(function(it,i){return '<li style="--i:'+i+'"><b>'+it[0]+'</b>'+it[1]+'</li>'}).join('')+'</ul>';
+ var z=S[cur].z;$$('[data-z]',tth).forEach(function(p){var on=z.indexOf(p.dataset.z)>-1;p.classList.toggle('on',on);if(on&&anim&&!RM&&p.classList.contains('p')&&!p.getAttribute('stroke-dasharray')){p.setAttribute('pathLength','1');p.classList.remove('draw');void p.getBBox();p.classList.add('draw')}});
+ var cp=S[cur].cap;$('#capA').textContent=cp[0][lang==='el'?0:1];$('#capB').textContent=cp[1][lang==='el'?0:1];
+ if(!anim||RM){sin.innerHTML=h;return}sin.classList.add('swap');setTimeout(function(){sin.innerHTML=h;sin.classList.remove('swap')},200)}
+tabs.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var i=+b.id.slice(2);if(i===cur)return;cur=i;$$('button',tabs).forEach(function(x,j){x.setAttribute('aria-selected',j===cur);x.tabIndex=j===cur?0:-1});drawPanel(true)});
+tabs.addEventListener('keydown',function(e){if(!/Arrow(Left|Right)/.test(e.key))return;e.preventDefault();var n=(cur+(e.key==='ArrowRight'?1:-1)+S.length)%S.length;$('#tb'+n).click();$('#tb'+n).focus()});
+tth.addEventListener('animationend',function(e){e.target.classList.remove('draw');e.target.removeAttribute('pathLength')});
+
+/* ---------- FAQ ---------- */
+function drawFaq(){var fq=d.getElementById('fq');var open=$('.qa[open]',fq);var oi=open?+open.dataset.i:0;
+ fq.innerHTML=F.map(function(f,i){var q=lang==='el'?f[0]:f[2],a=lang==='el'?f[1]:f[3];return '<details class="qa rq in" data-i="'+i+'" style="--i:'+i+'"'+(i===oi?' open':'')+'><summary><span>'+q+'</span><i></i></summary><div class="a"><p>'+a+'</p></div></details>'}).join('');
+ $$('.qa',fq).forEach(function(q){q.addEventListener('toggle',function(){if(q.open)$$('.qa',fq).forEach(function(o){if(o!==q)o.open=false})})})}
+drawTabs();drawPanel(false);drawFaq();
+$$('.qa','#fq'===0?d:d).forEach(function(q){q.classList.remove('in')});
+
+/* ---------- language ---------- */
+var META={el:{t:d.title,d:$('meta[name=description]').content},en:{t:'Dentist in Pagkrati, Athens | Thomai Zormpa, Dental Surgeon',d:'Dental surgeon in Pagkrati, Athens since 2000. Prevention, white fillings, root canals, prosthodontics, implants and surgical extractions. Book an appointment.'}};
+function setLang(l,first){if(l===lang&&!first)return;var go=function(){lang=l;html.lang=l;
+ $$('[data-en]').forEach(function(e){if(e._el==null)e._el=e.innerHTML;e.innerHTML=l==='en'?e.getAttribute('data-en'):e._el});
+ ['alt','aria','title'].forEach(function(a){var at=a==='aria'?'aria-label':a;$$('[data-en-'+a+']').forEach(function(e){if(e['_'+a]==null)e['_'+a]=e.getAttribute(at)||'';e.setAttribute(at,l==='en'?e.getAttribute('data-en-'+a):e['_'+a])})});
+ d.title=META[l].t;$('meta[name=description]').content=META[l].d;
+ $$('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.lang===l)});
+ split();drawTabs();tabs.classList.add('in');drawPanel(false);drawFaq();
+ try{localStorage.setItem('zor_lang',l)}catch(e){}};
+ if(first||RM){go();return}d.body.style.transition='opacity .25s';d.body.style.opacity='0';setTimeout(function(){go();d.body.style.opacity='1'},250)}
+$$('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.lang)})});
+
+/* ---------- hero: letters rise one by one ---------- */
+function split(){var n=$('[data-split]');var t=n.textContent,k=0;n.innerHTML=t.split(' ').map(function(wd){return '<span style="white-space:nowrap">'+wd.split('').map(function(c){return '<span class="ch" style="--i:'+(k++)+'">'+c+'</span>'}).join('')+'</span>'}).join(' ')}
+split();
+d.getElementById('inm').innerHTML='ΘΩΜΑΗ ΖΟΡΜΠΑ'.split('').map(function(c,i){return '<span style="--i:'+i+'">'+(c===' '?'&nbsp;':c)+'</span>'}).join('');
+
+var hero=d.getElementById('hero'),intro=d.getElementById('intro');
+function heroGo(){hero.classList.add('go')}
+var seen=false;try{seen=sessionStorage.getItem('zor_intro')}catch(e){}
+if(!RM&&!seen&&!d.hidden){intro.classList.add('run');try{sessionStorage.setItem('zor_intro',1)}catch(e){}
+ setTimeout(function(){intro.classList.add('lift');heroGo();setTimeout(function(){intro.style.display='none'},950)},1500)}
+else heroGo();
+setTimeout(function(){heroGo();if(intro.classList.contains('run')&&!intro.classList.contains('lift'))intro.style.display='none'},3200);
+
+/* ---------- reveals ---------- */
+var io=null,targets=$$('.rv,.rvx,.rvp,.rvt,.proof,.tl,.cvr,.g,.qc,.gcard,.cbox,.map');
+if('IntersectionObserver' in w){io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);if(e.target.classList.contains('proof'))countUp()}})},{rootMargin:'0px 0px -8% 0px',threshold:.04});targets.forEach(function(t){io.observe(t)})}
+else targets.forEach(function(t){t.classList.add('in')});
+setTimeout(function(){if(d.hidden)targets.forEach(function(t){t.classList.add('in')})},1200);
+function countUp(){$$('[data-count]').forEach(function(el){var to=+el.dataset.count,dec=+el.dataset.dec||0,suf=el.dataset.suf||'',fmt=function(v){return v.toFixed(dec).replace('.',',')+suf};
+ if(RM||d.hidden){el.textContent=fmt(to);return}var t0=performance.now();(function f(t){var p=Math.min(1,(t-t0)/1300);el.textContent=fmt(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)})(t0);setTimeout(function(){el.textContent=fmt(to)},1700)})}
+
+/* ---------- one rAF scroll handler ---------- */
+var hdr=d.getElementById('hdr'),prog=$('.prog'),tt=d.getElementById('totop'),mb=d.getElementById('mbar'),ticking=false,was=false;
+function onScroll(){ticking=false;var y=w.scrollY,h=html.scrollHeight-innerHeight,p=h>0?y/h:0;
+ var s=y>40;hdr.classList.toggle('solid',s);if(s&&!was&&!RM){hdr.classList.remove('spin');void hdr.offsetWidth;hdr.classList.add('spin')}was=s;
+ prog.style.transform='scaleX('+p+')';tt.style.setProperty('--p',p);tt.classList.toggle('on',y>innerHeight);mb.classList.toggle('on',y>innerHeight*.5)}
+w.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});onScroll();
+tt.addEventListener('click',function(){w.scrollTo({top:0,behavior:RM?'auto':'smooth'})});
+
+/* ---------- mobile nav ---------- */
+var mn=d.getElementById('mnav'),bg=d.getElementById('burger');
+function mOpen(o){mn.classList.toggle('open',o);mn.setAttribute('aria-hidden',!o);bg.setAttribute('aria-expanded',o);d.body.style.overflow=o?'hidden':'';if(o)d.getElementById('mclose').focus()}
+bg.addEventListener('click',function(){mOpen(true)});d.getElementById('mclose').addEventListener('click',function(){mOpen(false)});
+$$('[data-close]',mn).forEach(function(a){a.addEventListener('click',function(){mOpen(false)})});
+
+/* ---------- lightbox ---------- */
+var lb=d.getElementById('lb'),lbi=d.getElementById('lbimg'),lastF=null;
+$$('[data-lb]').forEach(function(f){f.tabIndex=0;f.setAttribute('role','button');var im=$('img',f);function op(){lastF=f;var ss=im.getAttribute('srcset');lbi.src=ss?ss.split(',').pop().trim().split(' ')[0]:im.src;lbi.alt=im.alt;lb.classList.add('open');d.getElementById('lbx').focus()}f.addEventListener('click',op);f.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();op()}})});
+function lbc(){lb.classList.remove('open');if(lastF)lastF.focus()}
+lb.addEventListener('click',function(e){if(e.target!==lbi)lbc()});
+d.addEventListener('keydown',function(e){if(e.key==='Escape'){if(lb.classList.contains('open'))lbc();if(mn.classList.contains('open'))mOpen(false)}});
+
+/* ---------- pointer: portrait tilt, magnetic buttons, hero light ---------- */
+if(matchMedia('(hover:hover)').matches&&!RM){
+ var pw=$('.pwrap');hero.addEventListener('pointermove',function(e){var x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;pw.style.transform='perspective(1200px) rotateY('+(x*5)+'deg) rotateX('+(-y*4)+'deg)';$$('.hbg .orb').forEach(function(o,i){o.style.translate=(x*(i?-30:40))+'px '+(y*(i?-24:30))+'px'})});
+ hero.addEventListener('pointerleave',function(){pw.style.transform=''});pw.style.transition='transform .6s var(--ease)';
+ $$('.mag').forEach(function(b){b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.18)+'px,'+((e.clientY-r.top-r.height/2)*.28)+'px)'});b.addEventListener('pointerleave',function(){b.style.transform=''})});
+}
+
+/* ---------- ambient layer: one quiet, different motion per section ---------- */
+var TOOTH='<path pathLength="1" d="M8 12c0-6 4.5-9 9-7.6 1.8.6 3 1.3 7 1.3s5.2-.7 7-1.3C35.5 3 40 6 40 12c0 5-1.8 8.2-3 11.4-1.4 3.9-1.7 8.3-2.4 12.5-.6 3.5-1.5 6-3.3 6-2.4 0-2.4-4.8-3-8.4-.5-2.4-.9-3.9-1.8-3.9s-1.3 1.5-1.8 3.9c-.6 3.6-.6 8.4-3 8.4-1.8 0-2.7-2.5-3.3-6-.7-4.2-1-8.6-2.4-12.5C9.8 20.2 8 17 8 12z"/>';
+$$('[data-amb]').forEach(function(s){var k=s.dataset.amb,a=d.createElement('div');a.className='amb off';a.setAttribute('aria-hidden','true');
+ var dark=k==='footer';var c1=dark?'rgba(111,98,160,.3)':'rgba(220,214,236,.7)',c2=dark?'rgba(201,199,209,.12)':'rgba(201,199,209,.45)';
+ var h='<div class="aw wa" style="--c:'+c1+'"></div><div class="aw wb" style="--c:'+c2+'"></div>';
+ if(k==='rings'){[[8,30,280],[92,72,360]].forEach(function(p,i){h+='<i class="rg" style="--x:'+p[0]+'%;--y:'+p[1]+'%;--s:'+p[2]+'px;--c:rgba(111,98,160,.3);--d:'+(10+i*3)+'s;--dl:'+(-i*4)+'s"></i>'})}
+ if(k==='grid'){h+='<div class="gl"></div>'}
+ if(k==='tooth'){[[3,10,110,-12],[90,60,90,14]].forEach(function(p){h+='<svg class="to" viewBox="0 0 48 60" style="--x:'+p[0]+'%;--y:'+p[1]+'%;--s:'+p[2]+'px;--r:'+p[3]+'deg;--c:rgba(111,98,160,.45)">'+TOOTH+'</svg>'})}
+ if(k==='sweep'){h+='<div class="sw"></div><div class="dg" style="--mx:10%;--my:80%"></div>'}
+ if(k==='rings2'){for(var j=0;j<3;j++)h+='<i class="rg" style="--x:30%;--y:55%;--s:'+(300+j*160)+'px;--c:rgba(111,98,160,.22);--d:12s;--dl:'+(-j*4)+'s"></i>'}
+ if(k==='dots'){h+='<div class="dg" style="--mx:12%;--my:60%"></div><div class="dg" style="--mx:90%;--my:20%"></div>'}
+ if(k==='footer'){h+='<div class="dg" style="--mx:20%;--my:30%;opacity:.6"></div>'}
+ a.innerHTML=h;s.insertBefore(a,s.firstChild)});
+if('IntersectionObserver' in w){var ao=new IntersectionObserver(function(es){es.forEach(function(e){var a=e.target.querySelector(':scope>.amb');if(!a)return;a.classList.toggle('off',!e.isIntersecting);if(e.isIntersecting)a.classList.add('on')})},{rootMargin:'80px 0px'});$$('[data-amb]').forEach(function(s){ao.observe(s)});
+ new IntersectionObserver(function(es){$('.hbg').classList.toggle('off',!es[0].isIntersecting)}).observe(hero)}
+else $$('.amb').forEach(function(a){a.classList.remove('off');a.classList.add('on')});
+
+/* FAQ reveal */
+var fq=d.getElementById('fq');if(io){var fo=new IntersectionObserver(function(es){if(es[0].isIntersecting){$$('.qa',fq).forEach(function(q){q.classList.add('in')});fo.disconnect()}},{rootMargin:'0px 0px -8% 0px'});fo.observe(fq)}
+
+try{if(localStorage.getItem('zor_lang')==='en')setLang('en',true)}catch(e){}
+})();
+</script>
+</body>
+</html>
