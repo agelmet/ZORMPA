@@ -373,73 +373,21 @@ address{font-style:normal}
 .lb button svg{width:22px;height:22px}
 
 
-/* ===== HERO v2 (22 Sept 2026): dark cinematic slate, arch portrait with an orbit, giant outline name drifting behind ===== */
-.hero{background:radial-gradient(120% 90% at 78% 40%,#3A3560 0%,#26273A 45%,#17182A 100%);color:#fff}
-.hero h1 .nm{color:#fff;text-shadow:0 20px 60px rgba(0,0,0,.35)}
-.hero h1 .role{color:#C9C1E6}
-.hero h1 .role em{color:rgba(255,255,255,.82)}
-.hero .eyebrow{color:#C9C1E6}
-.hero .sub{color:rgba(255,255,255,.78)}
-.hero .tlink{color:#fff}
-.hero .meta{border-top-color:rgba(255,255,255,.14)}
-.hero .meta b{color:#fff}.hero .meta div{color:rgba(255,255,255,.6)}
-.hero .btn-lil{background:linear-gradient(135deg,#8A7DC0,#6F62A0);box-shadow:0 14px 40px -12px rgba(157,146,198,.9),inset 0 1px 0 rgba(255,255,255,.3)}
-.hbg .o1{background:radial-gradient(closest-side,rgba(157,146,198,.45),transparent);width:60vmax;height:60vmax;right:-10vmax;top:-20vmax}
-.hbg .o2{background:radial-gradient(closest-side,rgba(111,98,160,.35),transparent)}
-.hbg .dg{background-image:radial-gradient(rgba(255,255,255,.18) 1px,transparent 1.5px)}
-.hbg .rg{border-color:rgba(201,193,230,.22)}
-.hbg .tooth path{stroke:rgba(201,193,230,.45)}
-.hbg .sweep{background:linear-gradient(90deg,transparent,rgba(255,255,255,.07),transparent)}
-.hbg .hgrid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:80px 80px;-webkit-mask-image:radial-gradient(70% 70% at 60% 50%,#000,transparent);mask-image:radial-gradient(70% 70% at 60% 50%,#000,transparent)}
-.hbg .big{position:absolute;left:0;bottom:-4vw;white-space:nowrap;font:400 23vw/1 var(--serif);color:transparent;-webkit-text-stroke:1px rgba(201,193,230,.13);letter-spacing:.02em;display:flex;gap:6vw}
-.hbg .ln2{position:absolute;inset:0;width:100%;height:100%}
-.hbg .ln2 path{fill:none;stroke:rgba(201,193,230,.22);stroke-width:1;vector-effect:non-scaling-stroke;stroke-dasharray:1;stroke-dashoffset:1}
-.hero.go .hbg .ln2 path{animation:draw 3.2s var(--ease) .8s forwards}
-.hero.go .hbg .ln2 path+path{animation-delay:1.3s}
-.pwrap .mat{inset:0;border-radius:260px 260px 30px 30px;border:1px solid rgba(201,193,230,.35);background:none;transform:translate(22px,22px)}
-.js .hero.go .pwrap .mat{transform:translate(22px,22px)}
-.js .pwrap .mat{transform:translate(0,0)}
-.pwrap .frame{border-radius:260px 260px 30px 30px;padding:10px;background:linear-gradient(160deg,rgba(255,255,255,.22),rgba(255,255,255,.06));-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);box-shadow:0 50px 120px -40px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.18) inset,0 0 80px -10px rgba(157,146,198,.45)}
-.pwrap .frame picture{display:block;border-radius:252px 252px 22px 22px;overflow:hidden;position:relative}
-.pwrap .frame picture::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.45) 48%,transparent 62%);transform:translateX(-110%)}
-.hero.go .pwrap .frame picture::after{transition:transform 1.6s var(--ease) 1.3s;transform:translateX(110%)}
-.pwrap img{border-radius:0}
-.orbit{position:absolute;left:50%;top:46%;width:136%;aspect-ratio:1;transform:translate(-50%,-50%);pointer-events:none;z-index:-1}
-.orbit .ring{position:absolute;inset:0;border-radius:50%;border:1px dashed rgba(201,193,230,.28)}
-.orbit .ring.r2{inset:9%;border-style:solid;border-color:rgba(201,193,230,.12)}
-.orbit .sat{position:absolute;inset:0}
-.orbit .sat i{position:absolute;left:50%;top:-6px;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:#C9C1E6;box-shadow:0 0 18px 4px rgba(157,146,198,.7)}
-.orbit .sat.s2 i{top:auto;bottom:-4px;width:8px;height:8px;margin-left:-4px;background:#fff}
-.orbit .sat.s3{inset:9%}.orbit .sat.s3 i{left:-5px;top:50%;width:9px;height:9px;margin-top:-4px;background:#9D92C6}
-.pwrap .tag{background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
-.pwrap .tag3{left:auto;right:-44px;bottom:30%;top:auto;flex-direction:column;align-items:flex-start;gap:2px}
-.pwrap .tag3 b{font:600 13px/1.2 var(--sans);color:var(--lil)}
-.pwrap .tag2{right:auto;left:-54px;top:18%}
-.js .hero.go .pwrap .tag3{transition-delay:1.45s}
-.js .hero.go .pwrap .tag2{transition-delay:1.6s}
-@media (prefers-reduced-motion:no-preference){
- .hbg .big{animation:bigdrift 60s linear infinite}
- .orbit .sat.s1{animation:orb 26s linear infinite}.orbit .sat.s2{animation:orb 34s linear infinite reverse}.orbit .sat.s3{animation:orb 22s linear infinite}
- .orbit .ring{animation:orb 120s linear infinite}
- .hero.go .pwrap .tag3{animation:bob 6s ease-in-out 2.4s infinite}
-}
-@keyframes bigdrift{to{transform:translateX(-50%)}}
-@keyframes orb{to{transform:rotate(360deg)}}
-.hdr:not(.solid) .brand,.hdr:not(.solid) .nav a:not(.btn){color:#fff}
-.hdr:not(.solid) .brand small{color:rgba(255,255,255,.6)}
-.hdr:not(.solid) .mark .o{stroke:rgba(255,255,255,.35)}.hdr:not(.solid) .mark .t{stroke:#C9C1E6}
-.hdr:not(.solid) .lang{background:rgba(255,255,255,.12)}
-.hdr:not(.solid) .lang button{color:#fff}.hdr:not(.solid) .lang button[aria-pressed=true]{color:var(--ink)}
-.hdr:not(.solid) .burger{background:rgba(255,255,255,.14);color:#fff}
-@media (max-width:1080px){.pwrap{width:min(100%,420px)}}
-@media (max-width:760px){
- .hbg .big{font-size:40vw;bottom:auto;top:52%}
- .orbit{width:120%}
- .pwrap{width:calc(100% - 40px);justify-self:center}
- .pwrap .tag3{display:none}
- .pwrap .tag2{left:-18px;top:12%}
- .pwrap .tag{left:-10px}
-}
+/* ===== HERO v3 (22 Sept 2026): her dental space as a calm full background, portrait on top, very little motion ===== */
+.hero{background:#EEF0F3}
+.hero-bg{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.hero-bg picture{display:block;width:100%;height:100%}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 45%;transform-origin:60% 50%}
+.hero-veil{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(246,245,248,.97) 0%,rgba(246,245,248,.92) 34%,rgba(246,245,248,.55) 58%,rgba(246,245,248,.18) 80%,rgba(246,245,248,.1) 100%),linear-gradient(0deg,rgba(246,245,248,.9) 0%,rgba(246,245,248,0) 22%)}
+.pwrap{width:min(100%,420px)}
+.pwrap .mat{display:none}
+.pwrap .frame{padding:10px;border-radius:24px;background:rgba(255,255,255,.9);box-shadow:0 40px 90px -34px rgba(30,31,43,.55)}
+.pwrap img{border-radius:16px}
+.pwrap .tag2{left:auto;right:-26px;top:36px;bottom:auto}
+@media (prefers-reduced-motion:no-preference){.hero-bg img{animation:kbg 26s ease-in-out infinite alternate}}
+@keyframes kbg{from{transform:scale(1.03)}to{transform:scale(1.1) translate(-1%,.5%)}}
+@media (max-width:1080px){.hero-veil{background:linear-gradient(180deg,rgba(246,245,248,.95) 0%,rgba(246,245,248,.88) 50%,rgba(246,245,248,.55) 100%)}}
+@media (max-width:760px){.pwrap{width:calc(100% - 26px)}.pwrap .tag2{right:-10px;top:-16px}}
 
 /* ambient layer */
 .amb{position:absolute;inset:0;z-index:-1;overflow:hidden;border-radius:inherit;pointer-events:none}
@@ -592,15 +540,8 @@ address{font-style:normal}
 
 <main id="main">
 <section class="hero" id="hero">
- <div class="hbg" aria-hidden="true">
-  <div class="orb o1"></div><div class="orb o2"></div><div class="dg"></div>
-  <i class="rg" style="--s:520px;--d:10s;--dl:0s"></i><i class="rg" style="--s:700px;--d:10s;--dl:-3.3s"></i><i class="rg" style="--s:880px;--d:10s;--dl:-6.6s"></i>
-  <svg class="tooth" viewBox="0 0 48 60"><path pathLength="1" d="M8 12c0-6 4.5-9 9-7.6 1.8.6 3 1.3 7 1.3s5.2-.7 7-1.3C35.5 3 40 6 40 12c0 5-1.8 8.2-3 11.4-1.4 3.9-1.7 8.3-2.4 12.5-.6 3.5-1.5 6-3.3 6-2.4 0-2.4-4.8-3-8.4-.5-2.4-.9-3.9-1.8-3.9s-1.3 1.5-1.8 3.9c-.6 3.6-.6 8.4-3 8.4-1.8 0-2.7-2.5-3.3-6-.7-4.2-1-8.6-2.4-12.5C9.8 20.2 8 17 8 12z"/></svg>
-  <div class="sweep"></div>
-  <div class="hgrid"></div>
-  <div class="big"><span data-en="ZORMPA">ΖΟΡΜΠΑ</span><span data-en="ZORMPA">ΖΟΡΜΠΑ</span><span data-en="ZORMPA">ΖΟΡΜΠΑ</span><span data-en="ZORMPA">ΖΟΡΜΠΑ</span></div>
-  <svg class="ln2" viewBox="0 0 1440 900" preserveAspectRatio="none"><path pathLength="1" d="M-20 700 C300 620 520 780 820 640 S1260 520 1460 600"/><path pathLength="1" d="M-20 240 C260 300 460 160 760 230 S1220 330 1460 210"/></svg>
- </div>
+ <div class="hero-bg" aria-hidden="true"><picture><img src="assets/img/odontiatreio-pagkrati-iatreio.webp" srcset="assets/img/odontiatreio-pagkrati-iatreio-800.webp 800w, assets/img/odontiatreio-pagkrati-iatreio.webp 1600w" sizes="100vw" width="1600" height="1200" alt="" fetchpriority="high"></picture></div>
+ <div class="hero-veil"></div>
  <div class="wrap">
   <div class="hero-txt">
    <p class="eyebrow fx" style="--d:.05s" data-en="Dental practice in Pagkrati · since 2000">Οδοντιατρείο στο Παγκράτι · από το 2000</p>
@@ -617,10 +558,8 @@ address{font-style:normal}
    </div>
   </div>
   <div class="pwrap">
-   <div class="orbit" aria-hidden="true"><div class="ring"></div><div class="ring r2"></div><div class="sat s1"><i></i></div><div class="sat s2"><i></i></div><div class="sat s3"><i></i></div></div>
    <div class="mat"></div>
    <div class="frame"><picture><img src="assets/img/cheirourgos-odontiatros-zormpa-thomai.webp" srcset="assets/img/cheirourgos-odontiatros-zormpa-thomai-700.webp 700w, assets/img/cheirourgos-odontiatros-zormpa-thomai.webp 1300w" sizes="(max-width:760px) 90vw, 470px" width="1300" height="1613" alt="Η χειρουργός οδοντίατρος Θωμαή Ζορμπά στο οδοντιατρείο της στο Παγκράτι" data-en-alt="Dental surgeon Thomai Zormpa at her practice in Pagkrati" fetchpriority="high"></picture></div>
-   <div class="tag tag3"><span>DDS · MSc</span><b>Dental Biomaterials</b></div>
    <div class="tag tag2"><span data-en="In Pagkrati since">Στο Παγκράτι από το</span><b>2000</b></div>
    <div class="tag"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg><span><b>4,8 <span class="s">★★★★★</span></b><span data-en="Google reviews">Αξιολογήσεις Google</span></span></div>
   </div>
@@ -737,13 +676,10 @@ address{font-style:normal}
   </div>
   <div class="rows">
    <div class="row">
-    <figure class="g" style="--a:.75;--i:0" data-lb><img src="assets/img/odontiatros-pagkrati-zormpa-ergasia-700.webp" srcset="assets/img/odontiatros-pagkrati-zormpa-ergasia-700.webp 700w, assets/img/odontiatros-pagkrati-zormpa-ergasia.webp 1200w" sizes="(max-width:760px) 100vw, 320px" width="1200" height="1600" loading="lazy" alt="Η οδοντίατρος εξετάζει ασθενή στο οδοντιατρείο στο Παγκράτι" data-en-alt="The dentist treating a patient at the practice in Pagkrati"><figcaption data-en="At work">Στην πράξη</figcaption></figure>
-    <figure class="g" style="--a:1.3333;--i:1" data-lb><img src="assets/img/odontiatreio-pagkrati-monada-800.webp" srcset="assets/img/odontiatreio-pagkrati-monada-800.webp 800w, assets/img/odontiatreio-pagkrati-monada.webp 1600w" sizes="(max-width:760px) 100vw, 560px" width="1600" height="1200" loading="lazy" alt="Η οδοντιατρική μονάδα του ιατρείου στο Παγκράτι" data-en-alt="The dental unit of the practice in Pagkrati"><figcaption data-en="Dental unit">Οδοντιατρική μονάδα</figcaption></figure>
+    <figure class="g" style="--a:1.3333;--i:0" data-lb><img src="assets/img/odontiatreio-pagkrati-monada-800.webp" srcset="assets/img/odontiatreio-pagkrati-monada-800.webp 800w, assets/img/odontiatreio-pagkrati-monada.webp 1600w" sizes="(max-width:760px) 100vw, 560px" width="1600" height="1200" loading="lazy" alt="Η οδοντιατρική μονάδα του ιατρείου στο Παγκράτι" data-en-alt="The dental unit of the practice in Pagkrati"><figcaption data-en="Dental unit">Οδοντιατρική μονάδα</figcaption></figure>
+    <figure class="g" style="--a:.75;--i:1" data-lb><img src="assets/img/odontiatros-pagkrati-zormpa-ergasia-700.webp" srcset="assets/img/odontiatros-pagkrati-zormpa-ergasia-700.webp 700w, assets/img/odontiatros-pagkrati-zormpa-ergasia.webp 1200w" sizes="(max-width:760px) 100vw, 220px" width="1200" height="1600" loading="lazy" alt="Η οδοντίατρος εξετάζει ασθενή στο οδοντιατρείο στο Παγκράτι" data-en-alt="The dentist treating a patient at the practice in Pagkrati"><figcaption data-en="At work">Στην πράξη</figcaption></figure>
     <figure class="g" style="--a:.75;--i:2" data-lb><img src="assets/img/odontiatreio-pagkrati-grafeio-700.webp" srcset="assets/img/odontiatreio-pagkrati-grafeio-700.webp 700w, assets/img/odontiatreio-pagkrati-grafeio.webp 1200w" sizes="(max-width:760px) 100vw, 320px" width="1200" height="1600" loading="lazy" alt="Το γραφείο υποδοχής του οδοντιατρείου" data-en-alt="The consultation office of the practice"><figcaption data-en="Office">Γραφείο</figcaption></figure>
-   </div>
-   <div class="row">
-    <figure class="g" style="--a:1.3333;--i:3" data-lb><img src="assets/img/odontiatreio-pagkrati-iatreio-800.webp" srcset="assets/img/odontiatreio-pagkrati-iatreio-800.webp 800w, assets/img/odontiatreio-pagkrati-iatreio.webp 1600w" sizes="(max-width:760px) 100vw, 580px" width="1600" height="1200" loading="lazy" alt="Το χειρουργείο του οδοντιατρείου με την οδοντιατρική έδρα" data-en-alt="The surgery room with the dental chair"><figcaption data-en="Surgery room">Χώρος θεραπείας</figcaption></figure>
-    <figure class="g" style="--a:1.4134;--i:4" data-lb><img src="assets/img/odontiatreio-pagkrati-anamoni-800.webp" srcset="assets/img/odontiatreio-pagkrati-anamoni-800.webp 800w, assets/img/odontiatreio-pagkrati-anamoni.webp 1600w" sizes="(max-width:760px) 100vw, 600px" width="1600" height="1132" loading="lazy" alt="Ο χώρος αναμονής του οδοντιατρείου στο Παγκράτι" data-en-alt="The waiting room of the practice in Pagkrati"><figcaption data-en="Waiting room">Χώρος αναμονής</figcaption></figure>
+    <figure class="g" style="--a:1.4134;--i:3" data-lb><img src="assets/img/odontiatreio-pagkrati-anamoni-800.webp" srcset="assets/img/odontiatreio-pagkrati-anamoni-800.webp 800w, assets/img/odontiatreio-pagkrati-anamoni.webp 1600w" sizes="(max-width:760px) 100vw, 600px" width="1600" height="1132" loading="lazy" alt="Ο χώρος αναμονής του οδοντιατρείου στο Παγκράτι" data-en-alt="The waiting room of the practice in Pagkrati"><figcaption data-en="Waiting room">Χώρος αναμονής</figcaption></figure>
    </div>
   </div>
  </div>
@@ -961,7 +897,7 @@ $$('[data-amb]').forEach(function(s){var k=s.dataset.amb,a=d.createElement('div'
  if(k==='footer'){h+='<div class="dg" style="--mx:20%;--my:30%;opacity:.6"></div>'}
  a.innerHTML=h;s.insertBefore(a,s.firstChild)});
 if('IntersectionObserver' in w){var ao=new IntersectionObserver(function(es){es.forEach(function(e){var a=e.target.querySelector(':scope>.amb');if(!a)return;a.classList.toggle('off',!e.isIntersecting);if(e.isIntersecting)a.classList.add('on')})},{rootMargin:'80px 0px'});$$('[data-amb]').forEach(function(s){ao.observe(s)});
- new IntersectionObserver(function(es){$('.hbg').classList.toggle('off',!es[0].isIntersecting)}).observe(hero)}
+ var hbgEl=$('.hbg');if(hbgEl)new IntersectionObserver(function(es){hbgEl.classList.toggle('off',!es[0].isIntersecting)}).observe(hero)}
 else $$('.amb').forEach(function(a){a.classList.remove('off');a.classList.add('on')});
 
 /* FAQ reveal */
